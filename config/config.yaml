@@ -70,6 +70,27 @@ llm:
   temperature: 0.7 # 温度参数
   timeout: 30 # 请求超时时间(秒)
 
+# 活动信息扩充配置（用于验证新闻真实性、丰富推送内容）
+enrichment:
+  enabled: true # 是否启用活动信息扩充功能
+  search_timeout: 30 # 搜索超时时间(秒)
+  max_search_results: 5 # 最多搜索多少条相关信息
+  use_llm_for_verification: true # 是否使用大模型进行真实性验证
+  min_confidence_for_push: 0.3 # 最低推送可信度（低于此值不显示扩充内容）
+  
+  # 网络搜索配置（可选，如不配置则使用免费的DuckDuckGo）
+  search_engines:
+    # Bing Search API（推荐）
+    # 申请地址: https://www.microsoft.com/en-us/bing/apis/bing-web-search-api
+    # 免费额度: 每月1000次请求
+    bing_api_key: ""
+    
+    # SerpAPI（支持Google、Bing等多引擎）
+    # 申请地址: https://serpapi.com
+    # 免费额度: 每月100次搜索
+    # serpapi_key: ""
+    # serpapi_engine: "google"  # google, bing, baidu, duckduckgo
+
 # 增加无聊的小知识
 # 这里的 name 你可以定义任意名称，只具有显示作用，不会影响数据的处理
 platforms:
@@ -87,6 +108,10 @@ platforms:
     name: "财联社热门"
   - id: "ifeng"
     name: "凤凰网"
+  - id: "jin10"
+    name: "金十数据"
+  - id: "wallstreetcn-quick"
+    name: "华尔街见闻-快讯"
   - id: "tieba"
     name: "贴吧"
   - id: "weibo"
