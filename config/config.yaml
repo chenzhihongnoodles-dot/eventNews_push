@@ -36,7 +36,7 @@ notification:
   feishu_message_separator: "━━━━━━━━━━━━━━━━━━━" # feishu 消息分割线
 
   silent_push:
-    enabled: true  # 是否启用静默推送模式，如果 true，则启用
+    enabled: true  # 恢复静默推送
     # 每天18:00定时推送
     time_range:
       start: "17:30"  # 推送时间范围开始（北京时间），留30分钟缓冲

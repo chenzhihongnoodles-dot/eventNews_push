@@ -327,26 +327,38 @@ class LLMContentAnalyzer:
             return self._fallback_analysis(title, content)
 
     def _build_prompt(self, title: str, content: str) -> str:
-        """构建分析提示词"""
+        """构建分析提示词 - 针对活动策划公司的创意分析"""
         content_preview = content[:500] if content else ""
 
         prompt = f"""
-你是一位资深的活动策划专家，请分析以下活动相关新闻的创意亮点和策划价值。
+你是一位资深的活动策划专家，专门为活动策划公司提供创意灵感和策划建议。
+
+请分析以下活动相关新闻：
 
 新闻标题：{title}
-
 新闻内容预览：{content_preview}
 
-请按照以下结构输出分析结果：
+请按照以下结构输出详细分析结果：
 
-1. 活动类型：（如：品牌发布会、营销活动、展览活动、公益活动等）
-2. 创意亮点：（列举3-5个核心创意点，用简洁的语言描述）
-3. 创新程度：（低/中/高/极高，简要说明理由）
-4. 目标受众：（分析活动面向的主要人群）
-5. 可借鉴价值：（作为活动策划公司，可以从中学到什么）
-6. 执行建议：（如果要策划类似活动，有哪些注意事项）
+【创意灵感】
+核心创意点：（这个活动最亮眼的创意是什么？1-2句话）
+可复用元素：（哪些策划手法可以复制到其他活动中？）
+创新亮点：（相比传统活动，哪里做得更出色？）
 
-请用中文回答，保持简洁清晰，不要冗长。
+【策划思路】
+主题定位：（活动主题如何与品牌调性结合？）
+互动设计：（用户参与环节有哪些亮点？）
+传播策略：（如何设计传播爆点？）
+
+【适用场景】
+适合行业：（这个创意适合哪些行业借鉴？列举3个）
+预算建议：（大概需要多少预算范围？如：低/中/高）
+执行难度：（落地需要注意什么？）
+
+【举一反三】
+变体方案：（如何将这个创意应用到其他场景？）
+
+请用中文回答，语言简洁专业，每项不超过30字。
 """
         return prompt.strip()
 
@@ -392,52 +404,51 @@ class LLMContentAnalyzer:
             return result["choices"][0]["message"]["content"]
 
     def _parse_response(self, response: str) -> Dict:
-        """解析大模型响应"""
+        """解析大模型响应 - 支持新的创意分析格式"""
         result = {
             "event_type": "未识别",
-            "creative_points": [],
-            "innovation_level": "中",
-            "target_audience": "大众",
-            "reference_value": "",
-            "execution_tips": "",
+            "core_creative": "",           # 核心创意点
+            "reusable_elements": "",      # 可复用元素
+            "innovation_highlights": "",  # 创新亮点
+            "theme_positioning": "",      # 主题定位
+            "interaction_design": "",     # 互动设计
+            "communication_strategy": "", # 传播策略
+            "suitable_industries": "",    # 适合行业
+            "budget_suggestion": "",      # 预算建议
+            "execution_difficulty": "",   # 执行难度
+            "variant_schemes": "",        # 变体方案
             "analysis_source": "AI分析",
         }
 
         lines = response.split("\n")
-        current_section = None
+        current_field = None
 
         for line in lines:
             line = line.strip()
-            if "活动类型" in line:
+            
+            # 解析字段
+            if "核心创意点" in line:
+                result["core_creative"] = line.replace("核心创意点：", "").replace("核心创意点:", "").strip()
+            elif "可复用元素" in line:
+                result["reusable_elements"] = line.replace("可复用元素：", "").replace("可复用元素:", "").strip()
+            elif "创新亮点" in line:
+                result["innovation_highlights"] = line.replace("创新亮点：", "").replace("创新亮点:", "").strip()
+            elif "主题定位" in line:
+                result["theme_positioning"] = line.replace("主题定位：", "").replace("主题定位:", "").strip()
+            elif "互动设计" in line:
+                result["interaction_design"] = line.replace("互动设计：", "").replace("互动设计:", "").strip()
+            elif "传播策略" in line:
+                result["communication_strategy"] = line.replace("传播策略：", "").replace("传播策略:", "").strip()
+            elif "适合行业" in line:
+                result["suitable_industries"] = line.replace("适合行业：", "").replace("适合行业:", "").strip()
+            elif "预算建议" in line:
+                result["budget_suggestion"] = line.replace("预算建议：", "").replace("预算建议:", "").strip()
+            elif "执行难度" in line:
+                result["execution_difficulty"] = line.replace("执行难度：", "").replace("执行难度:", "").strip()
+            elif "变体方案" in line:
+                result["variant_schemes"] = line.replace("变体方案：", "").replace("变体方案:", "").strip()
+            elif "活动类型" in line:
                 result["event_type"] = line.replace("活动类型：", "").replace("活动类型:", "").strip()
-            elif "创意亮点" in line:
-                current_section = "creative_points"
-            elif "创新程度" in line:
-                result["innovation_level"] = line.replace("创新程度：", "").replace("创新程度:", "").strip()
-                current_section = None
-            elif "目标受众" in line:
-                result["target_audience"] = line.replace("目标受众：", "").replace("目标受众:", "").strip()
-                current_section = None
-            elif "可借鉴价值" in line:
-                current_section = "reference_value"
-            elif "执行建议" in line:
-                current_section = "execution_tips"
-            elif line.startswith(("-", "*", "1.", "2.", "3.", "4.", "5.")):
-                point = re.sub(r"^[-*]\s*|^\d+\.\s*", "", line)
-                if current_section == "creative_points":
-                    result["creative_points"].append(point)
-                elif current_section == "reference_value":
-                    result["reference_value"] += (result["reference_value"] and "\n" or "") + point
-                elif current_section == "execution_tips":
-                    result["execution_tips"] += (result["execution_tips"] and "\n" or "") + point
-            elif current_section == "reference_value" and line:
-                result["reference_value"] += " " + line
-            elif current_section == "execution_tips" and line:
-                result["execution_tips"] += " " + line
-
-        # 如果创意亮点为空，尝试从文本中提取
-        if not result["creative_points"]:
-            result["creative_points"] = ["需要查看原文获取更多信息"]
 
         return result
 
@@ -488,36 +499,66 @@ class LLMContentAnalyzer:
 
 def format_analysis_for_wework(analysis: Dict, title: str, url: str, source: str, rank: int) -> str:
     """
-    格式化大模型分析结果为企业微信消息格式
+    格式化大模型分析结果为企业微信消息格式 - 针对活动策划公司的创意灵感格式
     """
     lines = []
-    lines.append(f"📌 **{clean_title(title)}**")
+    lines.append(f"📌 【创意灵感】{clean_title(title)}")
     lines.append("")
     
     # 活动类型
-    lines.append(f"🏷️ **活动类型**: {analysis.get('event_type', '未识别')}")
+    event_type = analysis.get('event_type', '未识别')
+    lines.append(f"🏷️ **活动类型**: {event_type}")
     
-    # 创新程度
-    lines.append(f"🚀 **创新程度**: {analysis.get('innovation_level', '中')}")
+    # 核心创意点
+    core_creative = analysis.get('core_creative', '')
+    if core_creative:
+        lines.append(f"💡 **核心创意**: {core_creative}")
     
-    # 目标受众
-    lines.append(f"👥 **目标受众**: {analysis.get('target_audience', '大众')}")
+    # 可复用元素
+    reusable_elements = analysis.get('reusable_elements', '')
+    if reusable_elements:
+        lines.append(f"🔧 **可复用元素**: {reusable_elements}")
     
-    # 创意亮点
-    creative_points = analysis.get('creative_points', [])
-    if creative_points:
-        if isinstance(creative_points, list):
-            lines.append("💡 **创意亮点**:")
-            for i, point in enumerate(creative_points[:5], 1):
-                lines.append(f"   {i}. {point}")
-        else:
-            lines.append(f"💡 **创意亮点**: {creative_points}")
+    # 创新亮点
+    innovation_highlights = analysis.get('innovation_highlights', '')
+    if innovation_highlights:
+        lines.append(f"✨ **创新亮点**: {innovation_highlights}")
     
-    # 可借鉴价值
-    reference_value = analysis.get('reference_value', '')
-    if reference_value:
+    # 主题定位
+    theme_positioning = analysis.get('theme_positioning', '')
+    if theme_positioning:
         lines.append("")
-        lines.append(f"🎯 **可借鉴价值**: {reference_value[:100]}..." if len(reference_value) > 100 else f"🎯 **可借鉴价值**: {reference_value}")
+        lines.append(f"🎯 **主题定位**: {theme_positioning}")
+    
+    # 互动设计
+    interaction_design = analysis.get('interaction_design', '')
+    if interaction_design:
+        lines.append(f"🤝 **互动设计**: {interaction_design}")
+    
+    # 传播策略
+    communication_strategy = analysis.get('communication_strategy', '')
+    if communication_strategy:
+        lines.append(f"📣 **传播策略**: {communication_strategy}")
+    
+    # 适用场景
+    lines.append("")
+    suitable_industries = analysis.get('suitable_industries', '')
+    if suitable_industries:
+        lines.append(f"🏢 **适合行业**: {suitable_industries}")
+    
+    budget_suggestion = analysis.get('budget_suggestion', '')
+    if budget_suggestion:
+        lines.append(f"💰 **预算建议**: {budget_suggestion}")
+    
+    execution_difficulty = analysis.get('execution_difficulty', '')
+    if execution_difficulty:
+        lines.append(f"⚠️ **执行难度**: {execution_difficulty}")
+    
+    # 变体方案
+    variant_schemes = analysis.get('variant_schemes', '')
+    if variant_schemes:
+        lines.append("")
+        lines.append(f"🔄 **举一反三**: {variant_schemes}")
     
     # 来源和链接
     lines.append("")
@@ -3073,14 +3114,101 @@ def send_to_wework(
         proxy_url: Optional[str] = None,
         mode: str = "daily",
 ) -> bool:
-    """发送到企业微信（支持分批发送）"""
+    """发送到企业微信（支持分批发送，使用大模型分析）"""
     headers = {"Content-Type": "application/json"}
     proxies = None
     if proxy_url:
         proxies = {"http": proxy_url, "https": proxy_url}
 
-    # 获取分批内容
-    batches = split_content_into_batches(report_data, "wework", update_info, mode=mode)
+    # 创建大模型分析器
+    analyzer = LLMContentAnalyzer(CONFIG)
+
+    # 构建创意分析内容
+    content_lines = []
+    total_news = 0
+
+    for stat in report_data["stats"]:
+        for title_data in stat["titles"]:
+            title = title_data["title"]
+            url = title_data.get("mobile_url") or title_data.get("url", "")
+            source = title_data.get("source", "未知")
+            ranks = title_data.get("ranks", [])
+            rank = ranks[0] if ranks else 0
+
+            # 使用大模型分析
+            analysis = analyzer.analyze_activity_creativity(title, "")
+
+            # 格式化输出（带分段和小标题）
+            lines = []
+            lines.append("")
+            lines.append(f"## 📌 {clean_title(title)}")
+            lines.append("")
+            
+            # 核心创意及亮点
+            has_content = False
+            core_creative = analysis.get('core_creative', '')
+            innovation_highlights = analysis.get('innovation_highlights', '')
+            
+            if core_creative or innovation_highlights:
+                lines.append("### 💡 创意分析")
+                lines.append("")
+                if core_creative:
+                    lines.append(f"- **核心创意**: {core_creative}")
+                if innovation_highlights:
+                    lines.append(f"- **亮点**: {innovation_highlights}")
+                lines.append("")
+                has_content = True
+            
+            # 可复用元素
+            reusable_elements = analysis.get('reusable_elements', '')
+            if reusable_elements:
+                lines.append("### 🔧 可复用元素")
+                lines.append("")
+                lines.append(f"- {reusable_elements}")
+                lines.append("")
+                has_content = True
+            
+            # 来源信息
+            lines.append("### 📍 来源信息")
+            lines.append("")
+            if url and not url.startswith("javascript"):
+                lines.append(f"- 原文链接: [点击查看]({url})")
+            lines.append(f"- 来源渠道: {source}")
+            lines.append(f"- 热度排名: TOP{rank}")
+            lines.append("")
+            
+            # 添加分隔线（最后一条不加）
+            lines.append("---")
+            lines.append("")
+
+            content_lines.append("\n".join(lines))
+            total_news += 1
+
+    # 添加头部
+    if total_news > 0:
+        content_lines.insert(0, f"📊 **今日活动创意灵感**（共 {total_news} 条）\n\n")
+    else:
+        content_lines = ["📭 今日暂无匹配的活动策划相关新闻"]
+
+    # 添加尾部
+    now = get_beijing_time()
+    content_lines.append(f"\n> 更新时间：{now.strftime('%Y-%m-%d %H:%M:%S')}")
+
+    # 分批处理
+    batches = []
+    current_batch = ""
+    max_bytes = CONFIG["MESSAGE_BATCH_SIZE"]
+
+    for line in content_lines:
+        test_content = current_batch + line
+        if len(test_content.encode("utf-8")) >= max_bytes and current_batch:
+            batches.append(current_batch)
+            current_batch = line
+        else:
+            current_batch = test_content
+    
+    if current_batch:
+        batches.append(current_batch)
 
     print(f"企业微信消息分为 {len(batches)} 批次发送 [{report_type}]")
 

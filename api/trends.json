@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-23T17:38:28.277920+08:00",
-  "total_titles_processed": 999,
+  "generated_at": "2026-05-23T18:28:04.131945+08:00",
+  "total_titles_processed": 1039,
   "failed_sources": [],
   "trends": [
     {
-      "keyword_group": "# 活动主题 发布会 年会 展会 庆典 嘉年华 音乐节 艺术展",
-      "match_count": 2,
+      "keyword_group": "# ============== 活动形式（核心创意点） ============== 发布会 年会 展会 庆典 嘉年华 音乐节 艺术展 快闪店 快闪活动 路演 沙龙 峰会 论坛 品鉴会 体验日 开放日 粉丝见面会 品牌日 周年庆 答谢会 招商会 推介会 启动仪式 揭牌仪式 签约仪式 颁奖典礼",
+      "match_count": 3,
       "titles": [
         {
           "title": "神23任务发布会",
@@ -19,23 +19,6 @@
           "time_info": "[11时53分 ~ 14时39分]"
         },
         {
-          "title": "神舟二十三号载人飞行任务新闻发布会将于今日上午9时召开",
-          "url": "https://wallstreetcn.com/livenews/3108277",
-          "source": "华尔街见闻-快讯",
-          "ranks": [
-            24
-          ],
-          "is_new": false,
-          "appearance_count": 1,
-          "time_info": "11时53分"
-        }
-      ]
-    },
-    {
-      "keyword_group": "# 活动形式 沉浸式体验 互动装置 快闪店 路演 沙龙 峰会 论坛",
-      "match_count": 1,
-      "titles": [
-        {
           "title": "欧盟委员会主席冯德莱恩：正在召开具有历史意义的欧盟-墨西哥峰会。欧洲和墨西哥可以互相提供很多资源。但更重要的是，我们可以共同实现更多目标。更强的伙伴关系从今天开始。",
           "url": "https://flash.jin10.com/detail/20260523004504967800",
           "source": "金十数据",
@@ -45,6 +28,17 @@
           "is_new": false,
           "appearance_count": 1,
           "time_info": "01时13分"
+        },
+        {
+          "title": "神舟二十三号载人飞行任务新闻发布会将于今日上午9时召开",
+          "url": "https://wallstreetcn.com/livenews/3108277",
+          "source": "华尔街见闻-快讯",
+          "ranks": [
+            24
+          ],
+          "is_new": false,
+          "appearance_count": 1,
+          "time_info": "11时53分"
         }
       ]
     }
