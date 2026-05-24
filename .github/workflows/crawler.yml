@@ -2,9 +2,9 @@ name: Hot News Crawler
 
 on:
   schedule:
-    # 每天18:00左右推送（UTC时间10:00，北京时间18:00）
+    # 每天20:30左右推送（UTC时间12:30，北京时间20:30）
     # GitHub Actions使用UTC时间，北京时间=UTC+8
-    - cron: "0 10 * * *" # 每天UTC时间10:00运行（北京时间18:00）
+    - cron: "30 12 * * *" # 每天UTC时间12:30运行（北京时间20:30）
   workflow_dispatch:
 
 # 添加权限设置
