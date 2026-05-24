@@ -1,0 +1,108 @@
+2026-05-24 19:08:56 - TrendRadar - INFO - ============================================================
+2026-05-24 19:08:56 - TrendRadar - INFO - 📊 TrendRadar v2.2.0 - 热点趋势雷达
+2026-05-24 19:08:56 - TrendRadar - INFO - ============================================================
+2026-05-24 19:08:56 - TrendRadar - INFO - 以单次脚本模式运行...
+2026-05-24 19:08:56 - TrendRadar - INFO - 当前北京时间 19:08，不在静默推送时段 17:30-18:30，跳过推送
+2026-05-24 19:08:56 - TrendRadar - INFO - 数据爬取和保存照常进行...
+2026-05-24 19:08:56 - TrendRadar - INFO - 获取 toutiao 成功（最新数据）
+2026-05-24 19:08:58 - TrendRadar - INFO - 获取 baidu 成功（最新数据）
+2026-05-24 19:08:59 - TrendRadar - INFO - 获取 wallstreetcn-hot 成功（最新数据）
+2026-05-24 19:09:00 - TrendRadar - INFO - 获取 thepaper 成功（最新数据）
+2026-05-24 19:09:02 - TrendRadar - INFO - 获取 bilibili-hot-search 成功（最新数据）
+2026-05-24 19:09:03 - TrendRadar - INFO - 获取 cls-hot 成功（最新数据）
+2026-05-24 19:09:04 - TrendRadar - INFO - 获取 ifeng 成功（最新数据）
+2026-05-24 19:09:06 - TrendRadar - INFO - 获取 jin10 成功（最新数据）
+2026-05-24 19:09:07 - TrendRadar - INFO - 获取 wallstreetcn-quick 成功（缓存数据）
+2026-05-24 19:09:08 - TrendRadar - INFO - 获取 tieba 成功（最新数据）
+2026-05-24 19:09:10 - TrendRadar - INFO - 获取 weibo 成功（缓存数据）
+2026-05-24 19:09:11 - TrendRadar - INFO - 获取 douyin 成功（最新数据）
+2026-05-24 19:09:12 - TrendRadar - INFO - 获取 zhihu 成功（缓存数据）
+2026-05-24 19:09:12 - TrendRadar - INFO - 爬取完成 - 成功: ['toutiao', 'baidu', 'wallstreetcn-hot', 'thepaper', 'bilibili-hot-search', 'cls-hot', 'ifeng', 'jin10', 'wallstreetcn-quick', 'tieba', 'weibo', 'douyin', 'zhihu'], 失败: []
+2026-05-24 19:09:12 - TrendRadar - INFO - 标题已保存到: output/2026年05月24日/txt/19时09分.txt
+2026-05-24 19:09:29 - TrendRadar - INFO - ============================================================
+2026-05-24 19:09:29 - TrendRadar - INFO - 📊 TrendRadar v2.2.0 - 热点趋势雷达
+2026-05-24 19:09:29 - TrendRadar - INFO - ============================================================
+2026-05-24 19:09:29 - TrendRadar - INFO - 以单次脚本模式运行...
+2026-05-24 19:09:30 - TrendRadar - INFO - 获取 toutiao 成功（最新数据）
+2026-05-24 19:09:31 - TrendRadar - INFO - 获取 baidu 成功（最新数据）
+2026-05-24 19:09:32 - TrendRadar - INFO - 获取 wallstreetcn-hot 成功（最新数据）
+2026-05-24 19:09:34 - TrendRadar - INFO - 获取 thepaper 成功（最新数据）
+2026-05-24 19:09:35 - TrendRadar - INFO - 获取 bilibili-hot-search 成功（最新数据）
+2026-05-24 19:09:36 - TrendRadar - INFO - 获取 cls-hot 成功（最新数据）
+2026-05-24 19:09:38 - TrendRadar - INFO - 获取 ifeng 成功（最新数据）
+2026-05-24 19:09:39 - TrendRadar - INFO - 获取 jin10 成功（最新数据）
+2026-05-24 19:09:40 - TrendRadar - INFO - 获取 wallstreetcn-quick 成功（缓存数据）
+2026-05-24 19:09:41 - TrendRadar - INFO - 获取 tieba 成功（缓存数据）
+2026-05-24 19:09:43 - TrendRadar - INFO - 获取 weibo 成功（缓存数据）
+2026-05-24 19:09:44 - TrendRadar - INFO - 获取 douyin 成功（最新数据）
+2026-05-24 19:09:45 - TrendRadar - INFO - 获取 zhihu 成功（缓存数据）
+2026-05-24 19:09:45 - TrendRadar - INFO - 爬取完成 - 成功: ['toutiao', 'baidu', 'wallstreetcn-hot', 'thepaper', 'bilibili-hot-search', 'cls-hot', 'ifeng', 'jin10', 'wallstreetcn-quick', 'tieba', 'weibo', 'douyin', 'zhihu'], 失败: []
+2026-05-24 19:09:45 - TrendRadar - INFO - 标题已保存到: output/2026年05月24日/txt/19时09分.txt
+2026-05-24 19:09:45 - TrendRadar - INFO - 关键词过滤: 304条 -> 9条匹配
+2026-05-24 19:09:46 - TrendRadar - INFO - 事件去重: 9条 -> 4个事件
+2026-05-24 19:09:46 - TrendRadar - INFO - ✓ 网络搜索引擎已初始化
+2026-05-24 19:09:52 - TrendRadar - INFO - 信息扩充完成: '直播丨山西沁源煤矿瓦斯爆炸事故新闻发布会：已致82人遇难，2人失联 山西留神峪煤矿瓦斯爆炸事故发布会：要给遇难者及其家属和社会公众一个负责任的交代 山西留神峪煤矿瓦斯爆炸事故发布会：企业对作业人数统计不清，一开始通报的人数不准确' - 可信度: 0.90
+2026-05-24 19:10:00 - TrendRadar - INFO - 信息扩充完成: '世界杯主题曲Dai Dai MV正式上线 2026世界杯主题曲MV发布' - 可信度: 0.90
+2026-05-24 19:10:09 - TrendRadar - INFO - 信息扩充完成: '大眼音乐节现场全员开嚼' - 可信度: 0.90
+2026-05-24 19:10:17 - TrendRadar - INFO - 信息扩充完成: '卢昱晓线下活动被吐槽' - 可信度: 0.90
+2026-05-24 19:10:19 - TrendRadar - INFO - 企业微信消息大小: 2429 字节
+2026-05-24 19:10:20 - TrendRadar - INFO - 企业微信消息发送成功
+2026-05-24 19:10:20 - TrendRadar - INFO - 任务完成！
+2026-05-24 20:10:30 - TrendRadar - INFO - ============================================================
+2026-05-24 20:10:30 - TrendRadar - INFO - 📊 TrendRadar v2.2.0 - 热点趋势雷达
+2026-05-24 20:10:30 - TrendRadar - INFO - ============================================================
+2026-05-24 20:10:30 - TrendRadar - INFO - 以单次脚本模式运行...
+2026-05-24 20:10:31 - TrendRadar - INFO - 获取 toutiao 成功（缓存数据）
+2026-05-24 20:10:33 - TrendRadar - INFO - 获取 baidu 成功（缓存数据）
+2026-05-24 20:10:34 - TrendRadar - INFO - 获取 wallstreetcn-hot 成功（最新数据）
+2026-05-24 20:10:35 - TrendRadar - INFO - 获取 thepaper 成功（最新数据）
+2026-05-24 20:10:37 - TrendRadar - INFO - 获取 bilibili-hot-search 成功（最新数据）
+2026-05-24 20:10:38 - TrendRadar - INFO - 获取 cls-hot 成功（缓存数据）
+2026-05-24 20:10:39 - TrendRadar - INFO - 获取 ifeng 成功（缓存数据）
+2026-05-24 20:10:40 - TrendRadar - INFO - 获取 jin10 成功（缓存数据）
+2026-05-24 20:10:42 - TrendRadar - INFO - 获取 wallstreetcn-quick 成功（缓存数据）
+2026-05-24 20:10:43 - TrendRadar - INFO - 获取 tieba 成功（缓存数据）
+2026-05-24 20:10:45 - TrendRadar - INFO - 获取 weibo 成功（缓存数据）
+2026-05-24 20:10:46 - TrendRadar - INFO - 获取 douyin 成功（缓存数据）
+2026-05-24 20:10:48 - TrendRadar - INFO - 获取 zhihu 成功（缓存数据）
+2026-05-24 20:10:48 - TrendRadar - INFO - 爬取完成 - 成功: ['toutiao', 'baidu', 'wallstreetcn-hot', 'thepaper', 'bilibili-hot-search', 'cls-hot', 'ifeng', 'jin10', 'wallstreetcn-quick', 'tieba', 'weibo', 'douyin', 'zhihu'], 失败: []
+2026-05-24 20:10:48 - TrendRadar - INFO - 标题已保存到: output/2026年05月24日/txt/20时10分.txt
+2026-05-24 20:10:48 - TrendRadar - INFO - 关键词过滤: 372条 -> 9条匹配
+2026-05-24 20:10:49 - TrendRadar - INFO - 事件去重: 9条 -> 4个事件
+2026-05-24 20:10:49 - TrendRadar - INFO - ✓ 网络搜索引擎已初始化
+2026-05-24 20:10:55 - TrendRadar - INFO - 信息扩充完成: '直播丨山西沁源煤矿瓦斯爆炸事故新闻发布会：已致82人遇难，2人失联 山西留神峪煤矿瓦斯爆炸事故发布会：要给遇难者及其家属和社会公众一个负责任的交代 山西留神峪煤矿瓦斯爆炸事故发布会：企业对作业人数统计不清，一开始通报的人数不准确' - 可信度: 0.90
+2026-05-24 20:11:03 - TrendRadar - INFO - 信息扩充完成: '世界杯主题曲Dai Dai MV正式上线 2026世界杯主题曲MV发布' - 可信度: 0.90
+2026-05-24 20:11:11 - TrendRadar - INFO - 信息扩充完成: '大眼音乐节现场全员开嚼' - 可信度: 0.90
+2026-05-24 20:11:20 - TrendRadar - INFO - 信息扩充完成: '卢昱晓线下活动被吐槽' - 可信度: 0.90
+2026-05-24 20:11:22 - TrendRadar - INFO - 企业微信消息大小: 2360 字节
+2026-05-24 20:11:22 - TrendRadar - INFO - 企业微信消息发送成功
+2026-05-24 20:11:22 - TrendRadar - INFO - 任务完成！
+2026-05-24 20:14:00 - TrendRadar - INFO - ============================================================
+2026-05-24 20:14:00 - TrendRadar - INFO - 📊 TrendRadar v2.2.0 - 热点趋势雷达
+2026-05-24 20:14:00 - TrendRadar - INFO - ============================================================
+2026-05-24 20:14:00 - TrendRadar - INFO - 以单次脚本模式运行...
+2026-05-24 20:14:01 - TrendRadar - INFO - 获取 toutiao 成功（缓存数据）
+2026-05-24 20:14:02 - TrendRadar - INFO - 获取 baidu 成功（缓存数据）
+2026-05-24 20:14:03 - TrendRadar - INFO - 获取 wallstreetcn-hot 成功（最新数据）
+2026-05-24 20:14:05 - TrendRadar - INFO - 获取 thepaper 成功（最新数据）
+2026-05-24 20:14:06 - TrendRadar - INFO - 获取 bilibili-hot-search 成功（缓存数据）
+2026-05-24 20:14:07 - TrendRadar - INFO - 获取 cls-hot 成功（缓存数据）
+2026-05-24 20:14:08 - TrendRadar - INFO - 获取 ifeng 成功（缓存数据）
+2026-05-24 20:14:10 - TrendRadar - INFO - 获取 jin10 成功（缓存数据）
+2026-05-24 20:14:11 - TrendRadar - INFO - 获取 wallstreetcn-quick 成功（缓存数据）
+2026-05-24 20:14:13 - TrendRadar - INFO - 获取 tieba 成功（缓存数据）
+2026-05-24 20:14:14 - TrendRadar - INFO - 获取 weibo 成功（缓存数据）
+2026-05-24 20:14:15 - TrendRadar - INFO - 获取 douyin 成功（缓存数据）
+2026-05-24 20:14:16 - TrendRadar - INFO - 获取 zhihu 成功（缓存数据）
+2026-05-24 20:14:16 - TrendRadar - INFO - 爬取完成 - 成功: ['toutiao', 'baidu', 'wallstreetcn-hot', 'thepaper', 'bilibili-hot-search', 'cls-hot', 'ifeng', 'jin10', 'wallstreetcn-quick', 'tieba', 'weibo', 'douyin', 'zhihu'], 失败: []
+2026-05-24 20:14:16 - TrendRadar - INFO - 标题已保存到: output/2026年05月24日/txt/20时14分.txt
+2026-05-24 20:14:16 - TrendRadar - INFO - 关键词过滤: 373条 -> 9条匹配
+2026-05-24 20:14:17 - TrendRadar - INFO - 事件去重: 9条 -> 4个事件
+2026-05-24 20:14:17 - TrendRadar - INFO - ✓ 网络搜索引擎已初始化
+2026-05-24 20:14:24 - TrendRadar - INFO - 信息扩充完成: '直播丨山西沁源煤矿瓦斯爆炸事故新闻发布会：已致82人遇难，2人失联 山西留神峪煤矿瓦斯爆炸事故发布会：要给遇难者及其家属和社会公众一个负责任的交代 山西留神峪煤矿瓦斯爆炸事故发布会：企业对作业人数统计不清，一开始通报的人数不准确' - 可信度: 0.90
+2026-05-24 20:14:31 - TrendRadar - INFO - 信息扩充完成: '世界杯主题曲Dai Dai MV正式上线 2026世界杯主题曲MV发布' - 可信度: 0.90
+2026-05-24 20:14:40 - TrendRadar - INFO - 信息扩充完成: '大眼音乐节现场全员开嚼' - 可信度: 0.90
+2026-05-24 20:14:47 - TrendRadar - INFO - 信息扩充完成: '卢昱晓线下活动被吐槽' - 可信度: 0.90
+2026-05-24 20:14:49 - TrendRadar - INFO - 企业微信消息大小: 2456 字节
+2026-05-24 20:14:49 - TrendRadar - INFO - 企业微信消息发送成功
+2026-05-24 20:14:49 - TrendRadar - INFO - 任务完成！

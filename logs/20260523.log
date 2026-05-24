@@ -1,0 +1,358 @@
+2026-05-23 22:40:40 - TrendRadar - INFO - ============================================================
+2026-05-23 22:40:40 - TrendRadar - INFO - 📊 TrendRadar v2.2.0 - 热点趋势雷达
+2026-05-23 22:40:40 - TrendRadar - INFO - ============================================================
+2026-05-23 22:40:40 - TrendRadar - INFO - 仅生成静态API文件...
+2026-05-23 22:41:50 - TrendRadar - INFO - ============================================================
+2026-05-23 22:41:50 - TrendRadar - INFO - 📊 TrendRadar v2.2.0 - 热点趋势雷达
+2026-05-23 22:41:50 - TrendRadar - INFO - ============================================================
+2026-05-23 22:41:50 - TrendRadar - INFO - 仅生成静态API文件...
+2026-05-23 22:41:50 - TrendRadar - INFO - API数据已保存到: api/trends.json
+2026-05-23 22:41:50 - TrendRadar - INFO - 文件生成完毕。
+2026-05-23 22:52:45 - TrendRadar - INFO - ============================================================
+2026-05-23 22:52:45 - TrendRadar - INFO - 📊 TrendRadar v2.2.0 - 热点趋势雷达
+2026-05-23 22:52:45 - TrendRadar - INFO - ============================================================
+2026-05-23 22:52:45 - TrendRadar - INFO - 以单次脚本模式运行...
+2026-05-23 22:52:45 - TrendRadar - WARNING - 未配置监控平台
+2026-05-23 22:53:36 - TrendRadar - INFO - ============================================================
+2026-05-23 22:53:36 - TrendRadar - INFO - 📊 TrendRadar v2.2.0 - 热点趋势雷达
+2026-05-23 22:53:36 - TrendRadar - INFO - ============================================================
+2026-05-23 22:53:36 - TrendRadar - INFO - 以单次脚本模式运行...
+2026-05-23 22:53:37 - TrendRadar - WARNING - 未配置监控平台
+2026-05-23 22:54:01 - TrendRadar - INFO - ============================================================
+2026-05-23 22:54:01 - TrendRadar - INFO - 📊 TrendRadar v2.2.0 - 热点趋势雷达
+2026-05-23 22:54:01 - TrendRadar - INFO - ============================================================
+2026-05-23 22:54:01 - TrendRadar - INFO - 以单次脚本模式运行...
+2026-05-23 22:54:02 - TrendRadar - INFO - 获取 toutiao 成功（缓存数据）
+2026-05-23 22:54:04 - TrendRadar - INFO - 获取 baidu 成功（缓存数据）
+2026-05-23 22:54:05 - TrendRadar - INFO - 获取 wallstreetcn-hot 成功（最新数据）
+2026-05-23 22:54:07 - TrendRadar - INFO - 获取 thepaper 成功（最新数据）
+2026-05-23 22:54:09 - TrendRadar - INFO - 获取 bilibili-hot-search 成功（缓存数据）
+2026-05-23 22:54:10 - TrendRadar - INFO - 获取 cls-hot 成功（缓存数据）
+2026-05-23 22:54:11 - TrendRadar - INFO - 获取 ifeng 成功（缓存数据）
+2026-05-23 22:54:13 - TrendRadar - INFO - 获取 jin10 成功（缓存数据）
+2026-05-23 22:54:14 - TrendRadar - INFO - 获取 wallstreetcn-quick 成功（缓存数据）
+2026-05-23 22:54:16 - TrendRadar - INFO - 获取 tieba 成功（缓存数据）
+2026-05-23 22:54:17 - TrendRadar - INFO - 获取 weibo 成功（缓存数据）
+2026-05-23 22:54:18 - TrendRadar - INFO - 获取 douyin 成功（最新数据）
+2026-05-23 22:54:20 - TrendRadar - INFO - 获取 zhihu 成功（缓存数据）
+2026-05-23 22:54:20 - TrendRadar - INFO - 爬取完成 - 成功: ['toutiao', 'baidu', 'wallstreetcn-hot', 'thepaper', 'bilibili-hot-search', 'cls-hot', 'ifeng', 'jin10', 'wallstreetcn-quick', 'tieba', 'weibo', 'douyin', 'zhihu'], 失败: []
+2026-05-23 22:54:20 - TrendRadar - INFO - 标题已保存到: output/2026年05月23日/txt/22时54分.txt
+2026-05-23 22:54:20 - TrendRadar - INFO - ✓ 网络搜索引擎已初始化
+2026-05-23 22:54:24 - TrendRadar - INFO - 信息扩充完成: 'sources' - 可信度: 0.90
+2026-05-23 22:54:31 - TrendRadar - INFO - 信息扩充完成: 'ranks' - 可信度: 0.90
+2026-05-23 22:54:38 - TrendRadar - INFO - 信息扩充完成: 'urls' - 可信度: 0.90
+2026-05-23 22:54:43 - TrendRadar - INFO - 信息扩充完成: 'mobileUrls' - 可信度: 0.90
+2026-05-23 22:54:52 - TrendRadar - INFO - 信息扩充完成: 'sources' - 可信度: 0.90
+2026-05-23 22:54:59 - TrendRadar - INFO - 信息扩充完成: 'ranks' - 可信度: 0.90
+2026-05-23 22:55:04 - TrendRadar - INFO - 信息扩充完成: 'urls' - 可信度: 0.90
+2026-05-23 22:55:10 - TrendRadar - INFO - 信息扩充完成: 'mobileUrls' - 可信度: 0.90
+2026-05-23 22:55:16 - TrendRadar - INFO - 信息扩充完成: 'sources' - 可信度: 0.90
+2026-05-23 22:55:23 - TrendRadar - INFO - 信息扩充完成: 'ranks' - 可信度: 0.90
+2026-05-23 22:55:29 - TrendRadar - INFO - 信息扩充完成: 'urls' - 可信度: 0.90
+2026-05-23 22:55:34 - TrendRadar - INFO - 信息扩充完成: 'mobileUrls' - 可信度: 0.90
+2026-05-23 22:55:39 - TrendRadar - INFO - 信息扩充完成: 'sources' - 可信度: 0.90
+2026-05-23 22:55:45 - TrendRadar - INFO - 信息扩充完成: 'ranks' - 可信度: 0.90
+2026-05-23 22:55:51 - TrendRadar - INFO - 信息扩充完成: 'urls' - 可信度: 0.90
+2026-05-23 22:55:57 - TrendRadar - INFO - 信息扩充完成: 'mobileUrls' - 可信度: 0.90
+2026-05-23 22:56:03 - TrendRadar - INFO - 信息扩充完成: 'sources' - 可信度: 0.90
+2026-05-23 22:56:10 - TrendRadar - INFO - 信息扩充完成: 'ranks' - 可信度: 0.90
+2026-05-23 22:56:17 - TrendRadar - INFO - 信息扩充完成: 'urls' - 可信度: 0.90
+2026-05-23 22:56:22 - TrendRadar - INFO - 信息扩充完成: 'mobileUrls' - 可信度: 0.90
+2026-05-23 22:56:27 - TrendRadar - INFO - 信息扩充完成: 'sources' - 可信度: 0.90
+2026-05-23 22:56:33 - TrendRadar - INFO - 信息扩充完成: 'ranks' - 可信度: 0.90
+2026-05-23 22:56:39 - TrendRadar - INFO - 信息扩充完成: 'urls' - 可信度: 0.90
+2026-05-23 22:58:32 - TrendRadar - INFO - ============================================================
+2026-05-23 22:58:32 - TrendRadar - INFO - 📊 TrendRadar v2.2.0 - 热点趋势雷达
+2026-05-23 22:58:32 - TrendRadar - INFO - ============================================================
+2026-05-23 22:58:32 - TrendRadar - INFO - 以单次脚本模式运行...
+2026-05-23 22:58:33 - TrendRadar - INFO - 获取 toutiao 成功（缓存数据）
+2026-05-23 22:58:35 - TrendRadar - INFO - 获取 baidu 成功（缓存数据）
+2026-05-23 22:58:36 - TrendRadar - INFO - 获取 wallstreetcn-hot 成功（最新数据）
+2026-05-23 22:58:37 - TrendRadar - INFO - 获取 thepaper 成功（最新数据）
+2026-05-23 22:58:39 - TrendRadar - INFO - 获取 bilibili-hot-search 成功（缓存数据）
+2026-05-23 22:58:40 - TrendRadar - INFO - 获取 cls-hot 成功（缓存数据）
+2026-05-23 22:58:41 - TrendRadar - INFO - 获取 ifeng 成功（缓存数据）
+2026-05-23 22:58:43 - TrendRadar - INFO - 获取 jin10 成功（缓存数据）
+2026-05-23 22:58:44 - TrendRadar - INFO - 获取 wallstreetcn-quick 成功（缓存数据）
+2026-05-23 22:58:46 - TrendRadar - INFO - 获取 tieba 成功（缓存数据）
+2026-05-23 22:58:47 - TrendRadar - INFO - 获取 weibo 成功（缓存数据）
+2026-05-23 22:58:49 - TrendRadar - INFO - 获取 douyin 成功（最新数据）
+2026-05-23 22:58:50 - TrendRadar - INFO - 获取 zhihu 成功（缓存数据）
+2026-05-23 22:58:50 - TrendRadar - INFO - 爬取完成 - 成功: ['toutiao', 'baidu', 'wallstreetcn-hot', 'thepaper', 'bilibili-hot-search', 'cls-hot', 'ifeng', 'jin10', 'wallstreetcn-quick', 'tieba', 'weibo', 'douyin', 'zhihu'], 失败: []
+2026-05-23 22:58:50 - TrendRadar - INFO - 标题已保存到: output/2026年05月23日/txt/22时58分.txt
+2026-05-23 22:58:50 - TrendRadar - INFO - ✓ 网络搜索引擎已初始化
+2026-05-23 22:58:50 - TrendRadar - INFO - 企业微信消息分为 1 批次发送
+2026-05-23 22:58:50 - TrendRadar - WARNING - 企业微信推送不可用
+2026-05-23 22:58:50 - TrendRadar - INFO - 任务完成！
+2026-05-23 22:59:46 - TrendRadar - INFO - ============================================================
+2026-05-23 22:59:46 - TrendRadar - INFO - 📊 TrendRadar v2.2.0 - 热点趋势雷达
+2026-05-23 22:59:46 - TrendRadar - INFO - ============================================================
+2026-05-23 22:59:46 - TrendRadar - INFO - 以单次脚本模式运行...
+2026-05-23 22:59:47 - TrendRadar - INFO - 获取 toutiao 成功（缓存数据）
+2026-05-23 22:59:49 - TrendRadar - INFO - 获取 baidu 成功（缓存数据）
+2026-05-23 22:59:50 - TrendRadar - INFO - 获取 wallstreetcn-hot 成功（最新数据）
+2026-05-23 22:59:52 - TrendRadar - INFO - 获取 thepaper 成功（最新数据）
+2026-05-23 22:59:53 - TrendRadar - INFO - 获取 bilibili-hot-search 成功（缓存数据）
+2026-05-23 22:59:55 - TrendRadar - INFO - 获取 cls-hot 成功（缓存数据）
+2026-05-23 22:59:56 - TrendRadar - INFO - 获取 ifeng 成功（缓存数据）
+2026-05-23 22:59:58 - TrendRadar - INFO - 获取 jin10 成功（缓存数据）
+2026-05-23 23:00:00 - TrendRadar - INFO - 获取 wallstreetcn-quick 成功（缓存数据）
+2026-05-23 23:00:07 - TrendRadar - INFO - 获取 tieba 成功（缓存数据）
+2026-05-23 23:00:14 - TrendRadar - INFO - 获取 weibo 成功（缓存数据）
+2026-05-23 23:00:22 - TrendRadar - INFO - 获取 douyin 成功（最新数据）
+2026-05-23 23:00:29 - TrendRadar - INFO - 获取 zhihu 成功（缓存数据）
+2026-05-23 23:00:29 - TrendRadar - INFO - 爬取完成 - 成功: ['toutiao', 'baidu', 'wallstreetcn-hot', 'thepaper', 'bilibili-hot-search', 'cls-hot', 'ifeng', 'jin10', 'wallstreetcn-quick', 'tieba', 'weibo', 'douyin', 'zhihu'], 失败: []
+2026-05-23 23:00:29 - TrendRadar - INFO - 标题已保存到: output/2026年05月23日/txt/23时00分.txt
+2026-05-23 23:00:29 - TrendRadar - INFO - 企业微信配置: enabled=False, url_set=False
+2026-05-23 23:00:29 - TrendRadar - INFO - ✓ 网络搜索引擎已初始化
+2026-05-23 23:00:29 - TrendRadar - INFO - 企业微信消息分为 1 批次发送
+2026-05-23 23:00:29 - TrendRadar - WARNING - 企业微信推送不可用
+2026-05-23 23:00:29 - TrendRadar - INFO - 任务完成！
+2026-05-23 23:00:42 - TrendRadar - INFO - ============================================================
+2026-05-23 23:00:42 - TrendRadar - INFO - 📊 TrendRadar v2.2.0 - 热点趋势雷达
+2026-05-23 23:00:42 - TrendRadar - INFO - ============================================================
+2026-05-23 23:00:42 - TrendRadar - INFO - 以单次脚本模式运行...
+2026-05-23 23:00:48 - TrendRadar - INFO - 获取 toutiao 成功（缓存数据）
+2026-05-23 23:00:56 - TrendRadar - INFO - 获取 baidu 成功（缓存数据）
+2026-05-23 23:01:02 - TrendRadar - INFO - 获取 wallstreetcn-hot 成功（最新数据）
+2026-05-23 23:01:03 - TrendRadar - WARNING - 请求 thepaper 失败: 500 Server Error: Internal Server Error for url: https://newsnow.busiyi.world/api/s?id=thepaper&latest. 4.16秒后重试...
+2026-05-23 23:01:11 - TrendRadar - INFO - 获取 thepaper 成功（最新数据）
+2026-05-23 23:01:13 - TrendRadar - INFO - 获取 bilibili-hot-search 成功（缓存数据）
+2026-05-23 23:01:18 - TrendRadar - INFO - 获取 cls-hot 成功（缓存数据）
+2026-05-23 23:01:19 - TrendRadar - WARNING - 请求 ifeng 失败: 500 Server Error: Internal Server Error for url: https://newsnow.busiyi.world/api/s?id=ifeng&latest. 3.51秒后重试...
+2026-05-23 23:01:29 - TrendRadar - INFO - 获取 ifeng 成功（缓存数据）
+2026-05-23 23:01:30 - TrendRadar - INFO - 获取 jin10 成功（缓存数据）
+2026-05-23 23:01:32 - TrendRadar - WARNING - 请求 wallstreetcn-quick 失败: 500 Server Error: Internal Server Error for url: https://newsnow.busiyi.world/api/s?id=wallstreetcn-quick&latest. 3.75秒后重试...
+2026-05-23 23:01:36 - TrendRadar - INFO - 获取 wallstreetcn-quick 成功（缓存数据）
+2026-05-23 23:01:37 - TrendRadar - WARNING - 请求 tieba 失败: 500 Server Error: Internal Server Error for url: https://newsnow.busiyi.world/api/s?id=tieba&latest. 3.96秒后重试...
+2026-05-23 23:01:47 - TrendRadar - INFO - 获取 tieba 成功（缓存数据）
+2026-05-23 23:01:49 - TrendRadar - INFO - 获取 weibo 成功（缓存数据）
+2026-05-23 23:01:55 - TrendRadar - INFO - 获取 douyin 成功（最新数据）
+2026-05-23 23:01:57 - TrendRadar - WARNING - 请求 zhihu 失败: 500 Server Error: Internal Server Error for url: https://newsnow.busiyi.world/api/s?id=zhihu&latest. 4.63秒后重试...
+2026-05-23 23:02:03 - TrendRadar - INFO - 获取 zhihu 成功（缓存数据）
+2026-05-23 23:02:03 - TrendRadar - INFO - 爬取完成 - 成功: ['toutiao', 'baidu', 'wallstreetcn-hot', 'thepaper', 'bilibili-hot-search', 'cls-hot', 'ifeng', 'jin10', 'wallstreetcn-quick', 'tieba', 'weibo', 'douyin', 'zhihu'], 失败: []
+2026-05-23 23:02:03 - TrendRadar - INFO - 标题已保存到: output/2026年05月23日/txt/23时02分.txt
+2026-05-23 23:02:03 - TrendRadar - INFO - 企业微信配置: enabled=True, url_set=True
+2026-05-23 23:02:03 - TrendRadar - INFO - ✓ 网络搜索引擎已初始化
+2026-05-23 23:02:03 - TrendRadar - INFO - 企业微信消息分为 1 批次发送
+2026-05-23 23:02:03 - TrendRadar - INFO - 企业微信消息发送成功
+2026-05-23 23:02:03 - TrendRadar - INFO - 任务完成！
+2026-05-23 23:06:18 - TrendRadar - INFO - ============================================================
+2026-05-23 23:06:18 - TrendRadar - INFO - 📊 TrendRadar v2.2.0 - 热点趋势雷达
+2026-05-23 23:06:18 - TrendRadar - INFO - ============================================================
+2026-05-23 23:06:18 - TrendRadar - INFO - 以单次脚本模式运行...
+2026-05-23 23:06:19 - TrendRadar - INFO - 获取 toutiao 成功（最新数据）
+2026-05-23 23:06:21 - TrendRadar - INFO - 获取 baidu 成功（缓存数据）
+2026-05-23 23:06:22 - TrendRadar - INFO - 获取 wallstreetcn-hot 成功（最新数据）
+2026-05-23 23:06:24 - TrendRadar - INFO - 获取 thepaper 成功（最新数据）
+2026-05-23 23:06:25 - TrendRadar - INFO - 获取 bilibili-hot-search 成功（最新数据）
+2026-05-23 23:06:28 - TrendRadar - INFO - 获取 cls-hot 成功（最新数据）
+2026-05-23 23:06:29 - TrendRadar - INFO - 获取 ifeng 成功（缓存数据）
+2026-05-23 23:06:31 - TrendRadar - INFO - 获取 jin10 成功（缓存数据）
+2026-05-23 23:06:32 - TrendRadar - INFO - 获取 wallstreetcn-quick 成功（最新数据）
+2026-05-23 23:06:33 - TrendRadar - INFO - 获取 tieba 成功（缓存数据）
+2026-05-23 23:06:34 - TrendRadar - INFO - 获取 weibo 成功（缓存数据）
+2026-05-23 23:06:36 - TrendRadar - INFO - 获取 douyin 成功（最新数据）
+2026-05-23 23:06:37 - TrendRadar - INFO - 获取 zhihu 成功（缓存数据）
+2026-05-23 23:06:37 - TrendRadar - INFO - 爬取完成 - 成功: ['toutiao', 'baidu', 'wallstreetcn-hot', 'thepaper', 'bilibili-hot-search', 'cls-hot', 'ifeng', 'jin10', 'wallstreetcn-quick', 'tieba', 'weibo', 'douyin', 'zhihu'], 失败: []
+2026-05-23 23:06:37 - TrendRadar - INFO - 标题已保存到: output/2026年05月23日/txt/23时06分.txt
+2026-05-23 23:06:38 - TrendRadar - INFO - 企业微信配置: enabled=True, url_set=True
+2026-05-23 23:06:38 - TrendRadar - INFO - ✓ 网络搜索引擎已初始化
+2026-05-23 23:06:38 - TrendRadar - INFO - 企业微信消息分为 1 批次发送
+2026-05-23 23:06:38 - TrendRadar - INFO - 企业微信消息发送成功
+2026-05-23 23:06:38 - TrendRadar - INFO - 任务完成！
+2026-05-23 23:08:28 - TrendRadar - INFO - ============================================================
+2026-05-23 23:08:28 - TrendRadar - INFO - 📊 TrendRadar v2.2.0 - 热点趋势雷达
+2026-05-23 23:08:28 - TrendRadar - INFO - ============================================================
+2026-05-23 23:08:28 - TrendRadar - INFO - 以单次脚本模式运行...
+2026-05-23 23:08:29 - TrendRadar - INFO - 获取 toutiao 成功（最新数据）
+2026-05-23 23:08:30 - TrendRadar - INFO - 获取 baidu 成功（缓存数据）
+2026-05-23 23:08:32 - TrendRadar - INFO - 获取 wallstreetcn-hot 成功（最新数据）
+2026-05-23 23:08:34 - TrendRadar - INFO - 获取 thepaper 成功（最新数据）
+2026-05-23 23:08:35 - TrendRadar - INFO - 获取 bilibili-hot-search 成功（最新数据）
+2026-05-23 23:08:36 - TrendRadar - INFO - 获取 cls-hot 成功（最新数据）
+2026-05-23 23:08:38 - TrendRadar - INFO - 获取 ifeng 成功（缓存数据）
+2026-05-23 23:08:40 - TrendRadar - INFO - 获取 jin10 成功（缓存数据）
+2026-05-23 23:08:41 - TrendRadar - INFO - 获取 wallstreetcn-quick 成功（最新数据）
+2026-05-23 23:08:43 - TrendRadar - INFO - 获取 tieba 成功（最新数据）
+2026-05-23 23:08:45 - TrendRadar - INFO - 获取 weibo 成功（缓存数据）
+2026-05-23 23:08:47 - TrendRadar - INFO - 获取 douyin 成功（最新数据）
+2026-05-23 23:08:48 - TrendRadar - INFO - 获取 zhihu 成功（最新数据）
+2026-05-23 23:08:48 - TrendRadar - INFO - 爬取完成 - 成功: ['toutiao', 'baidu', 'wallstreetcn-hot', 'thepaper', 'bilibili-hot-search', 'cls-hot', 'ifeng', 'jin10', 'wallstreetcn-quick', 'tieba', 'weibo', 'douyin', 'zhihu'], 失败: []
+2026-05-23 23:08:48 - TrendRadar - INFO - 标题已保存到: output/2026年05月23日/txt/23时08分.txt
+2026-05-23 23:08:48 - TrendRadar - INFO - 企业微信配置: enabled=True, url_set=True
+2026-05-23 23:08:48 - TrendRadar - INFO - ✓ 网络搜索引擎已初始化
+2026-05-23 23:08:48 - TrendRadar - INFO - 企业微信消息分为 1 批次发送
+2026-05-23 23:08:49 - TrendRadar - INFO - 企业微信消息发送成功
+2026-05-23 23:08:49 - TrendRadar - INFO - 任务完成！
+2026-05-23 23:12:01 - TrendRadar - INFO - ============================================================
+2026-05-23 23:12:01 - TrendRadar - INFO - 📊 TrendRadar v2.2.0 - 热点趋势雷达
+2026-05-23 23:12:01 - TrendRadar - INFO - ============================================================
+2026-05-23 23:12:01 - TrendRadar - INFO - 以单次脚本模式运行...
+2026-05-23 23:12:02 - TrendRadar - INFO - 获取 toutiao 成功（最新数据）
+2026-05-23 23:12:04 - TrendRadar - INFO - 获取 baidu 成功（缓存数据）
+2026-05-23 23:12:05 - TrendRadar - INFO - 获取 wallstreetcn-hot 成功（最新数据）
+2026-05-23 23:12:07 - TrendRadar - INFO - 获取 thepaper 成功（最新数据）
+2026-05-23 23:12:08 - TrendRadar - INFO - 获取 bilibili-hot-search 成功（最新数据）
+2026-05-23 23:12:09 - TrendRadar - INFO - 获取 cls-hot 成功（最新数据）
+2026-05-23 23:12:11 - TrendRadar - INFO - 获取 ifeng 成功（缓存数据）
+2026-05-23 23:12:13 - TrendRadar - INFO - 获取 jin10 成功（最新数据）
+2026-05-23 23:12:14 - TrendRadar - INFO - 获取 wallstreetcn-quick 成功（缓存数据）
+2026-05-23 23:12:16 - TrendRadar - INFO - 获取 tieba 成功（最新数据）
+2026-05-23 23:12:18 - TrendRadar - INFO - 获取 weibo 成功（缓存数据）
+2026-05-23 23:12:19 - TrendRadar - INFO - 获取 douyin 成功（最新数据）
+2026-05-23 23:12:21 - TrendRadar - INFO - 获取 zhihu 成功（最新数据）
+2026-05-23 23:12:21 - TrendRadar - INFO - 爬取完成 - 成功: ['toutiao', 'baidu', 'wallstreetcn-hot', 'thepaper', 'bilibili-hot-search', 'cls-hot', 'ifeng', 'jin10', 'wallstreetcn-quick', 'tieba', 'weibo', 'douyin', 'zhihu'], 失败: []
+2026-05-23 23:12:21 - TrendRadar - INFO - 标题已保存到: output/2026年05月23日/txt/23时12分.txt
+2026-05-23 23:12:21 - TrendRadar - INFO - 企业微信配置: enabled=True, url_set=True
+2026-05-23 23:12:21 - TrendRadar - INFO - ✓ 网络搜索引擎已初始化
+2026-05-23 23:12:21 - TrendRadar - INFO - 企业微信消息分为 1 批次发送
+2026-05-23 23:12:21 - TrendRadar - INFO - 企业微信消息发送成功
+2026-05-23 23:12:21 - TrendRadar - INFO - 任务完成！
+2026-05-23 23:16:21 - TrendRadar - INFO - ============================================================
+2026-05-23 23:16:21 - TrendRadar - INFO - 📊 TrendRadar v2.2.0 - 热点趋势雷达
+2026-05-23 23:16:21 - TrendRadar - INFO - ============================================================
+2026-05-23 23:16:21 - TrendRadar - INFO - 以单次脚本模式运行...
+2026-05-23 23:16:22 - TrendRadar - INFO - 获取 toutiao 成功（缓存数据）
+2026-05-23 23:16:24 - TrendRadar - INFO - 获取 baidu 成功（最新数据）
+2026-05-23 23:16:27 - TrendRadar - INFO - 获取 wallstreetcn-hot 成功（最新数据）
+2026-05-23 23:16:29 - TrendRadar - INFO - 获取 thepaper 成功（最新数据）
+2026-05-23 23:16:30 - TrendRadar - INFO - 获取 bilibili-hot-search 成功（缓存数据）
+2026-05-23 23:16:32 - TrendRadar - INFO - 获取 cls-hot 成功（缓存数据）
+2026-05-23 23:16:35 - TrendRadar - INFO - 获取 ifeng 成功（最新数据）
+2026-05-23 23:16:36 - TrendRadar - INFO - 获取 jin10 成功（最新数据）
+2026-05-23 23:16:37 - TrendRadar - INFO - 获取 wallstreetcn-quick 成功（缓存数据）
+2026-05-23 23:16:38 - TrendRadar - INFO - 获取 tieba 成功（最新数据）
+2026-05-23 23:16:40 - TrendRadar - INFO - 获取 weibo 成功（缓存数据）
+2026-05-23 23:16:41 - TrendRadar - INFO - 获取 douyin 成功（缓存数据）
+2026-05-23 23:16:42 - TrendRadar - INFO - 获取 zhihu 成功（最新数据）
+2026-05-23 23:16:42 - TrendRadar - INFO - 爬取完成 - 成功: ['toutiao', 'baidu', 'wallstreetcn-hot', 'thepaper', 'bilibili-hot-search', 'cls-hot', 'ifeng', 'jin10', 'wallstreetcn-quick', 'tieba', 'weibo', 'douyin', 'zhihu'], 失败: []
+2026-05-23 23:16:42 - TrendRadar - INFO - 标题已保存到: output/2026年05月23日/txt/23时16分.txt
+2026-05-23 23:16:43 - TrendRadar - INFO - 企业微信配置: enabled=True, url_set=True
+2026-05-23 23:16:43 - TrendRadar - INFO - ✓ 网络搜索引擎已初始化
+2026-05-23 23:16:50 - TrendRadar - INFO - 信息扩充完成: '欧盟委员会主席冯德莱恩：正在召开具有历史意义的欧盟-墨西哥峰会。欧洲和墨西哥可以互相提供很多资源。但更重要的是，我们可以共同实现更多目标。更强的伙伴关系从今天开始。' - 可信度: 0.90
+2026-05-23 23:16:59 - TrendRadar - INFO - 信息扩充完成: '神舟二十三号载人飞行任务新闻发布会将于今日上午9时召开' - 可信度: 0.90
+2026-05-23 23:17:09 - TrendRadar - INFO - 信息扩充完成: '神23任务发布会' - 可信度: 0.90
+2026-05-23 23:17:18 - TrendRadar - INFO - 信息扩充完成: '在大眼音乐节嚼起来了' - 可信度: 0.90
+2026-05-23 23:17:27 - TrendRadar - INFO - 信息扩充完成: '比亚迪 5 月 28 日将举办智能化战略发布会，预计宣布新突破，可能涉及什么技术？你有哪些期待？' - 可信度: 0.90
+2026-05-23 23:17:36 - TrendRadar - INFO - 信息扩充完成: '直击山西煤矿事故发布会' - 可信度: 0.90
+2026-05-23 23:17:45 - TrendRadar - INFO - 信息扩充完成: '山西煤矿爆炸事故新闻发布会' - 可信度: 0.90
+2026-05-23 23:17:53 - TrendRadar - INFO - 信息扩充完成: '山西煤矿事故新闻发布会' - 可信度: 0.90
+2026-05-23 23:18:02 - TrendRadar - INFO - 信息扩充完成: '山西留神峪煤矿瓦斯爆炸事故发布会：事故已致82人遇难' - 可信度: 0.90
+2026-05-23 23:18:11 - TrendRadar - INFO - 信息扩充完成: '山西留神峪煤矿瓦斯爆炸事故新闻发布会现场为遇难者默哀' - 可信度: 0.90
+2026-05-23 23:18:20 - TrendRadar - INFO - 信息扩充完成: '留神峪煤矿事故发布会' - 可信度: 0.90
+2026-05-23 23:18:28 - TrendRadar - INFO - 信息扩充完成: '直播：山西沁源煤矿瓦斯爆炸事故救援情况新闻发布会' - 可信度: 0.90
+2026-05-23 23:18:35 - TrendRadar - INFO - 信息扩充完成: '发布会通报矿难致82死2失联' - 可信度: 0.90
+2026-05-23 23:18:43 - TrendRadar - INFO - 信息扩充完成: '矿难事故发布会现场全体起立默哀' - 可信度: 0.90
+2026-05-23 23:18:51 - TrendRadar - INFO - 信息扩充完成: '鸣潮二周年潮声庆典动画' - 可信度: 0.90
+2026-05-23 23:19:00 - TrendRadar - INFO - 信息扩充完成: '山西留神峪煤矿瓦斯爆炸事故发布会：要给遇难者及其家属和社会公众一个负责任的交代。央视' - 可信度: 0.90
+2026-05-23 23:19:09 - TrendRadar - INFO - 信息扩充完成: '山西留神峪煤矿瓦斯爆炸事故发布会：要给遇难者及其家属和社会公众一个负责任的交代' - 可信度: 0.90
+2026-05-23 23:19:17 - TrendRadar - INFO - 信息扩充完成: '山西留神峪煤矿瓦斯爆炸事故发布会：涉事煤矿企业有重大违法行为' - 可信度: 0.90
+2026-05-23 23:19:24 - TrendRadar - INFO - 信息扩充完成: '山西煤矿事故发布会全体默哀' - 可信度: 0.90
+2026-05-23 23:19:26 - TrendRadar - INFO - 企业微信消息分为 4 批次发送
+2026-05-23 23:19:27 - TrendRadar - INFO - 企业微信消息发送成功
+2026-05-23 23:19:27 - TrendRadar - INFO - 企业微信消息发送成功
+2026-05-23 23:19:27 - TrendRadar - INFO - 企业微信消息发送成功
+2026-05-23 23:19:28 - TrendRadar - INFO - 企业微信消息发送成功
+2026-05-23 23:19:28 - TrendRadar - INFO - 任务完成！
+2026-05-23 23:30:30 - TrendRadar - INFO - ============================================================
+2026-05-23 23:30:30 - TrendRadar - INFO - 📊 TrendRadar v2.2.0 - 热点趋势雷达
+2026-05-23 23:30:30 - TrendRadar - INFO - ============================================================
+2026-05-23 23:30:30 - TrendRadar - INFO - 以单次脚本模式运行...
+2026-05-23 23:30:35 - TrendRadar - INFO - 获取 toutiao 成功（缓存数据）
+2026-05-23 23:30:42 - TrendRadar - INFO - 获取 baidu 成功（缓存数据）
+2026-05-23 23:30:44 - TrendRadar - WARNING - 请求 wallstreetcn-hot 失败: 500 Server Error: Internal Server Error for url: https://newsnow.busiyi.world/api/s?id=wallstreetcn-hot&latest. 4.09秒后重试...
+2026-05-23 23:30:48 - TrendRadar - WARNING - 请求 wallstreetcn-hot 失败: 500 Server Error: Internal Server Error for url: https://newsnow.busiyi.world/api/s?id=wallstreetcn-hot&latest. 4.08秒后重试...
+2026-05-23 23:30:58 - TrendRadar - INFO - 获取 wallstreetcn-hot 成功（最新数据）
+2026-05-23 23:30:59 - TrendRadar - INFO - 获取 thepaper 成功（最新数据）
+2026-05-23 23:31:06 - TrendRadar - INFO - 获取 bilibili-hot-search 成功（缓存数据）
+2026-05-23 23:31:08 - TrendRadar - WARNING - 请求 cls-hot 失败: 500 Server Error: Internal Server Error for url: https://newsnow.busiyi.world/api/s?id=cls-hot&latest. 3.75秒后重试...
+2026-05-23 23:31:12 - TrendRadar - WARNING - 请求 cls-hot 失败: 500 Server Error: Internal Server Error for url: https://newsnow.busiyi.world/api/s?id=cls-hot&latest. 5.55秒后重试...
+2026-05-23 23:31:23 - TrendRadar - INFO - 获取 cls-hot 成功（缓存数据）
+2026-05-23 23:31:24 - TrendRadar - WARNING - 请求 ifeng 失败: 500 Server Error: Internal Server Error for url: https://newsnow.busiyi.world/api/s?id=ifeng&latest. 4.80秒后重试...
+2026-05-23 23:31:31 - TrendRadar - INFO - 获取 ifeng 成功（缓存数据）
+2026-05-23 23:31:32 - TrendRadar - WARNING - 请求 jin10 失败: 500 Server Error: Internal Server Error for url: https://newsnow.busiyi.world/api/s?id=jin10&latest. 3.12秒后重试...
+2026-05-23 23:31:40 - TrendRadar - INFO - 获取 jin10 成功（缓存数据）
+2026-05-23 23:31:47 - TrendRadar - INFO - 获取 wallstreetcn-quick 成功（缓存数据）
+2026-05-23 23:31:49 - TrendRadar - WARNING - 请求 tieba 失败: 500 Server Error: Internal Server Error for url: https://newsnow.busiyi.world/api/s?id=tieba&latest. 3.16秒后重试...
+2026-05-23 23:31:53 - TrendRadar - INFO - 获取 tieba 成功（缓存数据）
+2026-05-23 23:31:57 - TrendRadar - INFO - 获取 weibo 成功（缓存数据）
+2026-05-23 23:31:58 - TrendRadar - INFO - 获取 douyin 成功（缓存数据）
+2026-05-23 23:32:01 - TrendRadar - INFO - 获取 zhihu 成功（缓存数据）
+2026-05-23 23:32:01 - TrendRadar - INFO - 爬取完成 - 成功: ['toutiao', 'baidu', 'wallstreetcn-hot', 'thepaper', 'bilibili-hot-search', 'cls-hot', 'ifeng', 'jin10', 'wallstreetcn-quick', 'tieba', 'weibo', 'douyin', 'zhihu'], 失败: []
+2026-05-23 23:32:01 - TrendRadar - INFO - 标题已保存到: output/2026年05月23日/txt/23时32分.txt
+2026-05-23 23:32:01 - TrendRadar - INFO - 关键词过滤: 1347条 -> 19条匹配
+2026-05-23 23:32:02 - TrendRadar - INFO - 事件去重: 19条 -> 6个事件
+2026-05-23 23:32:02 - TrendRadar - INFO - ✓ 网络搜索引擎已初始化
+2026-05-23 23:32:08 - TrendRadar - INFO - 信息扩充完成: '直击山西煤矿事故发布会 山西煤矿爆炸事故新闻发布会 山西煤矿事故新闻发布会' - 可信度: 0.90
+2026-05-23 23:32:15 - TrendRadar - INFO - 信息扩充完成: '神舟二十三号载人飞行任务新闻发布会将于今日上午9时召开 神23任务发布会' - 可信度: 0.90
+2026-05-23 23:32:24 - TrendRadar - INFO - 信息扩充完成: '欧盟委员会主席冯德莱恩：正在召开具有历史意义的欧盟-墨西哥峰会。欧洲和墨西哥可以互相提供很多资源。但更重要的是，我们可以共同实现更多目标。更强的伙伴关系从今天开始。' - 可信度: 0.90
+2026-05-23 23:32:33 - TrendRadar - INFO - 信息扩充完成: '在大眼音乐节嚼起来了' - 可信度: 0.80
+2026-05-23 23:32:41 - TrendRadar - INFO - 信息扩充完成: '比亚迪 5 月 28 日将举办智能化战略发布会，预计宣布新突破，可能涉及什么技术？你有哪些期待？' - 可信度: 0.90
+2026-05-23 23:32:50 - TrendRadar - INFO - 信息扩充完成: '鸣潮二周年潮声庆典动画' - 可信度: 0.90
+2026-05-23 23:32:52 - TrendRadar - INFO - 企业微信消息分为 2 批次发送
+2026-05-23 23:32:52 - TrendRadar - INFO - 企业微信消息发送成功
+2026-05-23 23:32:52 - TrendRadar - INFO - 企业微信消息发送成功
+2026-05-23 23:32:52 - TrendRadar - INFO - 任务完成！
+2026-05-23 23:37:53 - TrendRadar - INFO - ============================================================
+2026-05-23 23:37:53 - TrendRadar - INFO - 📊 TrendRadar v2.2.0 - 热点趋势雷达
+2026-05-23 23:37:53 - TrendRadar - INFO - ============================================================
+2026-05-23 23:37:53 - TrendRadar - INFO - 以单次脚本模式运行...
+2026-05-23 23:37:54 - TrendRadar - INFO - 获取 toutiao 成功（缓存数据）
+2026-05-23 23:37:55 - TrendRadar - INFO - 获取 baidu 成功（缓存数据）
+2026-05-23 23:37:57 - TrendRadar - INFO - 获取 wallstreetcn-hot 成功（最新数据）
+2026-05-23 23:37:59 - TrendRadar - INFO - 获取 thepaper 成功（最新数据）
+2026-05-23 23:38:00 - TrendRadar - INFO - 获取 bilibili-hot-search 成功（最新数据）
+2026-05-23 23:38:02 - TrendRadar - INFO - 获取 cls-hot 成功（缓存数据）
+2026-05-23 23:38:04 - TrendRadar - INFO - 获取 ifeng 成功（缓存数据）
+2026-05-23 23:38:06 - TrendRadar - INFO - 获取 jin10 成功（缓存数据）
+2026-05-23 23:38:08 - TrendRadar - INFO - 获取 wallstreetcn-quick 成功（最新数据）
+2026-05-23 23:38:09 - TrendRadar - INFO - 获取 tieba 成功（最新数据）
+2026-05-23 23:38:14 - TrendRadar - INFO - 获取 weibo 成功（缓存数据）
+2026-05-23 23:38:15 - TrendRadar - INFO - 获取 douyin 成功（缓存数据）
+2026-05-23 23:38:17 - TrendRadar - INFO - 获取 zhihu 成功（最新数据）
+2026-05-23 23:38:17 - TrendRadar - INFO - 爬取完成 - 成功: ['toutiao', 'baidu', 'wallstreetcn-hot', 'thepaper', 'bilibili-hot-search', 'cls-hot', 'ifeng', 'jin10', 'wallstreetcn-quick', 'tieba', 'weibo', 'douyin', 'zhihu'], 失败: []
+2026-05-23 23:38:17 - TrendRadar - INFO - 标题已保存到: output/2026年05月23日/txt/23时38分.txt
+2026-05-23 23:38:17 - TrendRadar - INFO - 关键词过滤: 1353条 -> 20条匹配
+2026-05-23 23:38:18 - TrendRadar - INFO - 事件去重: 20条 -> 6个事件
+2026-05-23 23:38:18 - TrendRadar - INFO - ✓ 网络搜索引擎已初始化
+2026-05-23 23:38:25 - TrendRadar - INFO - 信息扩充完成: '欧盟委员会主席冯德莱恩：正在召开具有历史意义的欧盟-墨西哥峰会。欧洲和墨西哥可以互相提供很多资源。但更重要的是，我们可以共同实现更多目标。更强的伙伴关系从今天开始。' - 可信度: 0.90
+2026-05-23 23:38:34 - TrendRadar - INFO - 信息扩充完成: '神舟二十三号载人飞行任务新闻发布会将于今日上午9时召开 神23任务发布会' - 可信度: 0.90
+2026-05-23 23:38:42 - TrendRadar - INFO - 信息扩充完成: '在大眼音乐节嚼起来了' - 可信度: 0.90
+2026-05-23 23:38:51 - TrendRadar - INFO - 信息扩充完成: '比亚迪 5 月 28 日将举办智能化战略发布会，预计宣布新突破，可能涉及什么技术？你有哪些期待？' - 可信度: 0.90
+2026-05-23 23:39:01 - TrendRadar - INFO - 信息扩充完成: '直击山西煤矿事故发布会 山西煤矿爆炸事故新闻发布会 山西煤矿事故新闻发布会' - 可信度: 0.90
+2026-05-23 23:39:10 - TrendRadar - INFO - 信息扩充完成: '鸣潮二周年潮声庆典动画' - 可信度: 0.90
+2026-05-23 23:39:12 - TrendRadar - INFO - 企业微信消息大小: 3693 字节
+2026-05-23 23:39:12 - TrendRadar - INFO - 企业微信消息发送成功
+2026-05-23 23:39:12 - TrendRadar - INFO - 任务完成！
+2026-05-23 23:44:55 - TrendRadar - INFO - ============================================================
+2026-05-23 23:44:55 - TrendRadar - INFO - 📊 TrendRadar v2.2.0 - 热点趋势雷达
+2026-05-23 23:44:55 - TrendRadar - INFO - ============================================================
+2026-05-23 23:44:55 - TrendRadar - INFO - 以单次脚本模式运行...
+2026-05-23 23:44:57 - TrendRadar - INFO - 获取 toutiao 成功（缓存数据）
+2026-05-23 23:44:59 - TrendRadar - INFO - 获取 baidu 成功（最新数据）
+2026-05-23 23:45:01 - TrendRadar - INFO - 获取 wallstreetcn-hot 成功（最新数据）
+2026-05-23 23:45:03 - TrendRadar - INFO - 获取 thepaper 成功（最新数据）
+2026-05-23 23:45:05 - TrendRadar - INFO - 获取 bilibili-hot-search 成功（缓存数据）
+2026-05-23 23:45:07 - TrendRadar - INFO - 获取 cls-hot 成功（缓存数据）
+2026-05-23 23:45:10 - TrendRadar - INFO - 获取 ifeng 成功（最新数据）
+2026-05-23 23:45:11 - TrendRadar - INFO - 获取 jin10 成功（最新数据）
+2026-05-23 23:45:13 - TrendRadar - INFO - 获取 wallstreetcn-quick 成功（缓存数据）
+2026-05-23 23:45:15 - TrendRadar - INFO - 获取 tieba 成功（最新数据）
+2026-05-23 23:45:16 - TrendRadar - INFO - 获取 weibo 成功（缓存数据）
+2026-05-23 23:45:17 - TrendRadar - INFO - 获取 douyin 成功（缓存数据）
+2026-05-23 23:45:19 - TrendRadar - INFO - 获取 zhihu 成功（最新数据）
+2026-05-23 23:45:19 - TrendRadar - INFO - 爬取完成 - 成功: ['toutiao', 'baidu', 'wallstreetcn-hot', 'thepaper', 'bilibili-hot-search', 'cls-hot', 'ifeng', 'jin10', 'wallstreetcn-quick', 'tieba', 'weibo', 'douyin', 'zhihu'], 失败: []
+2026-05-23 23:45:19 - TrendRadar - INFO - 标题已保存到: output/2026年05月23日/txt/23时45分.txt
+2026-05-23 23:45:19 - TrendRadar - INFO - 关键词过滤: 1363条 -> 21条匹配
+2026-05-23 23:45:20 - TrendRadar - INFO - 事件去重: 21条 -> 6个事件
+2026-05-23 23:45:20 - TrendRadar - INFO - ✓ 网络搜索引擎已初始化
+2026-05-23 23:45:28 - TrendRadar - INFO - 信息扩充完成: '欧盟委员会主席冯德莱恩：正在召开具有历史意义的欧盟-墨西哥峰会。欧洲和墨西哥可以互相提供很多资源。但更重要的是，我们可以共同实现更多目标。更强的伙伴关系从今天开始。' - 可信度: 0.90
+2026-05-23 23:45:36 - TrendRadar - INFO - 信息扩充完成: '神舟二十三号载人飞行任务新闻发布会将于今日上午9时召开 神23任务发布会' - 可信度: 0.90
+2026-05-23 23:45:45 - TrendRadar - INFO - 信息扩充完成: '在大眼音乐节嚼起来了' - 可信度: 0.90
+2026-05-23 23:45:54 - TrendRadar - INFO - 信息扩充完成: '比亚迪 5 月 28 日将举办智能化战略发布会，预计宣布新突破，可能涉及什么技术？你有哪些期待？' - 可信度: 0.90
+2026-05-23 23:46:03 - TrendRadar - INFO - 信息扩充完成: '直击山西煤矿事故发布会 山西煤矿爆炸事故新闻发布会 山西煤矿事故新闻发布会' - 可信度: 0.90
+2026-05-23 23:46:11 - TrendRadar - INFO - 信息扩充完成: '鸣潮二周年潮声庆典动画' - 可信度: 0.90
+2026-05-23 23:46:13 - TrendRadar - INFO - 企业微信消息大小: 3811 字节
+2026-05-23 23:46:14 - TrendRadar - INFO - 企业微信消息发送成功
+2026-05-23 23:46:14 - TrendRadar - INFO - 任务完成！
