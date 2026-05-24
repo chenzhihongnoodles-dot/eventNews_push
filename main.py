@@ -123,7 +123,6 @@ def main():
                 # 检查是否已推送过（once_per_day 功能）
                 once_per_day = silent_push.get("once_per_day", False)
                 if once_per_day:
-                    # 创建推送记录目录
                     record_dir = ".push_records"
                     os.makedirs(record_dir, exist_ok=True)
                     record_file = os.path.join(record_dir, f"{today_str}.txt")
@@ -148,7 +147,6 @@ def main():
                                 save_titles_to_file(results, id_to_name, failed_ids)
                         return
                     else:
-                        # 创建推送记录文件
                         with open(record_file, "w") as f:
                             f.write(f"Push recorded at {now_beijing.strftime('%Y-%m-%d %H:%M:%S')}")
                         logger.info(f"创建今日推送记录: {today_str}")
