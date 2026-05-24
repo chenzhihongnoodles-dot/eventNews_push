@@ -88,14 +88,18 @@ def main():
             silent_push = push_config.get("silent_push", {})
             if silent_push.get("enabled", False):
                 from datetime import datetime, timezone, timedelta
+                import os
+                
                 beijing_tz = timezone(timedelta(hours=8))
                 now_beijing = datetime.now(beijing_tz)
                 current_time_str = now_beijing.strftime("%H:%M")
+                today_str = now_beijing.strftime("%Y-%m-%d")
                 
                 time_range = silent_push.get("time_range", {})
-                start_str = time_range.get("start", "17:30")
-                end_str = time_range.get("end", "18:30")
+                start_str = time_range.get("start", "08:30")
+                end_str = time_range.get("end", "09:30")
                 
+                # 检查是否在推送时间范围内
                 if not (start_str <= current_time_str <= end_str):
                     logger.info(f"当前北京时间 {current_time_str}，不在静默推送时段 {start_str}-{end_str}，跳过推送")
                     logger.info("数据爬取和保存照常进行...")
@@ -115,8 +119,41 @@ def main():
                         if results:
                             save_titles_to_file(results, id_to_name, failed_ids)
                     return
-                else:
-                    logger.info(f"当前北京时间 {current_time_str}，在静默推送时段内，执行完整流程")
+                
+                # 检查是否已推送过（once_per_day 功能）
+                once_per_day = silent_push.get("once_per_day", False)
+                if once_per_day:
+                    # 创建推送记录目录
+                    record_dir = ".push_records"
+                    os.makedirs(record_dir, exist_ok=True)
+                    record_file = os.path.join(record_dir, f"{today_str}.txt")
+                    
+                    if os.path.exists(record_file):
+                        logger.info(f"今日 {today_str} 已推送过，跳过推送")
+                        logger.info("数据爬取和保存照常进行...")
+                        from src.crawler.data_fetcher import DataFetcher
+                        from src.crawler.data_processor import save_titles_to_file
+                        crawler_config = config.get_crawler_config()
+                        platforms_config = config.get("platforms", []) or crawler_config.get("platforms", [])
+                        platforms = []
+                        for p in platforms_config:
+                            if isinstance(p, dict):
+                                platforms.append((p["id"], p["name"]))
+                            else:
+                                platforms.append(p)
+                        if platforms:
+                            fetcher = DataFetcher()
+                            results, id_to_name, failed_ids = fetcher.crawl_websites(platforms)
+                            if results:
+                                save_titles_to_file(results, id_to_name, failed_ids)
+                        return
+                    else:
+                        # 创建推送记录文件
+                        with open(record_file, "w") as f:
+                            f.write(f"Push recorded at {now_beijing.strftime('%Y-%m-%d %H:%M:%S')}")
+                        logger.info(f"创建今日推送记录: {today_str}")
+                
+                logger.info(f"当前北京时间 {current_time_str}，在静默推送时段内，执行完整流程")
             
             from src.crawler.data_fetcher import DataFetcher
             from src.crawler.data_processor import (

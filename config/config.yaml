@@ -37,10 +37,10 @@ notification:
 
   silent_push:
     enabled: true  # 静默推送
-    # 每天21:30定时推送
+    # 每天早上9点定时推送
     time_range:
-      start: "21:00"  # 推送时间范围开始（北京时间），留30分钟缓冲
-      end: "22:00"    # 推送时间范围结束（北京时间）
+      start: "08:30"  # 推送时间范围开始（北京时间），留30分钟缓冲
+      end: "09:30"    # 推送时间范围结束（北京时间）
     once_per_day: true  # 每天在时间范围内只推送一次，如果 false，则时间范围内每次执行都推送一次
     push_record_retention_days: 7  # 推送记录保留天数
 
