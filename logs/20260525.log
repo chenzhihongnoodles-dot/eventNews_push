@@ -1,0 +1,21 @@
+2026-05-25 00:06:44 - TrendRadar - INFO - ============================================================
+2026-05-25 00:06:44 - TrendRadar - INFO - 📊 TrendRadar v2.2.0 - 热点趋势雷达
+2026-05-25 00:06:44 - TrendRadar - INFO - ============================================================
+2026-05-25 00:06:44 - TrendRadar - INFO - 以单次脚本模式运行...
+2026-05-25 00:06:44 - TrendRadar - INFO - 当前北京时间 00:06，不在静默推送时段 08:30-09:30，跳过推送
+2026-05-25 00:06:44 - TrendRadar - INFO - 数据爬取和保存照常进行...
+2026-05-25 00:06:45 - TrendRadar - INFO - 获取 toutiao 成功（缓存数据）
+2026-05-25 00:06:48 - TrendRadar - INFO - 获取 baidu 成功（缓存数据）
+2026-05-25 00:06:49 - TrendRadar - INFO - 获取 wallstreetcn-hot 成功（最新数据）
+2026-05-25 00:06:51 - TrendRadar - INFO - 获取 thepaper 成功（最新数据）
+2026-05-25 00:06:53 - TrendRadar - INFO - 获取 bilibili-hot-search 成功（最新数据）
+2026-05-25 00:06:54 - TrendRadar - INFO - 获取 cls-hot 成功（缓存数据）
+2026-05-25 00:06:55 - TrendRadar - INFO - 获取 ifeng 成功（缓存数据）
+2026-05-25 00:06:57 - TrendRadar - INFO - 获取 jin10 成功（缓存数据）
+2026-05-25 00:06:58 - TrendRadar - INFO - 获取 wallstreetcn-quick 成功（最新数据）
+2026-05-25 00:06:59 - TrendRadar - INFO - 获取 tieba 成功（缓存数据）
+2026-05-25 00:07:01 - TrendRadar - INFO - 获取 weibo 成功（缓存数据）
+2026-05-25 00:07:02 - TrendRadar - INFO - 获取 douyin 成功（缓存数据）
+2026-05-25 00:07:04 - TrendRadar - INFO - 获取 zhihu 成功（缓存数据）
+2026-05-25 00:07:04 - TrendRadar - INFO - 爬取完成 - 成功: ['toutiao', 'baidu', 'wallstreetcn-hot', 'thepaper', 'bilibili-hot-search', 'cls-hot', 'ifeng', 'jin10', 'wallstreetcn-quick', 'tieba', 'weibo', 'douyin', 'zhihu'], 失败: []
+2026-05-25 00:07:04 - TrendRadar - INFO - 标题已保存到: output/2026年05月25日/txt/00时07分.txt
