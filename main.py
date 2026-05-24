@@ -82,6 +82,42 @@ def main():
         else:
             # 单次脚本模式
             logger.info("以单次脚本模式运行...")
+            
+            # ========== 静默推送时间检查 ==========
+            push_config = config.get("push", {}) or config.get("notification", {})
+            silent_push = push_config.get("silent_push", {})
+            if silent_push.get("enabled", False):
+                from datetime import datetime, timezone, timedelta
+                beijing_tz = timezone(timedelta(hours=8))
+                now_beijing = datetime.now(beijing_tz)
+                current_time_str = now_beijing.strftime("%H:%M")
+                
+                time_range = silent_push.get("time_range", {})
+                start_str = time_range.get("start", "17:30")
+                end_str = time_range.get("end", "18:30")
+                
+                if not (start_str <= current_time_str <= end_str):
+                    logger.info(f"当前北京时间 {current_time_str}，不在静默推送时段 {start_str}-{end_str}，跳过推送")
+                    logger.info("数据爬取和保存照常进行...")
+                    from src.crawler.data_fetcher import DataFetcher
+                    from src.crawler.data_processor import save_titles_to_file
+                    crawler_config = config.get_crawler_config()
+                    platforms_config = config.get("platforms", []) or crawler_config.get("platforms", [])
+                    platforms = []
+                    for p in platforms_config:
+                        if isinstance(p, dict):
+                            platforms.append((p["id"], p["name"]))
+                        else:
+                            platforms.append(p)
+                    if platforms:
+                        fetcher = DataFetcher()
+                        results, id_to_name, failed_ids = fetcher.crawl_websites(platforms)
+                        if results:
+                            save_titles_to_file(results, id_to_name, failed_ids)
+                    return
+                else:
+                    logger.info(f"当前北京时间 {current_time_str}，在静默推送时段内，执行完整流程")
+            
             from src.crawler.data_fetcher import DataFetcher
             from src.crawler.data_processor import (
                 save_titles_to_file,
