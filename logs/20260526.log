@@ -27,3 +27,32 @@
 2026-05-26 00:26:56 - TrendRadar - INFO - 企业微信消息大小: 3098 字节
 2026-05-26 00:26:57 - TrendRadar - INFO - 企业微信消息发送成功
 2026-05-26 00:26:57 - TrendRadar - INFO - 任务完成！
+2026-05-26 01:19:09 - TrendRadar - INFO - ============================================================
+2026-05-26 01:19:09 - TrendRadar - INFO - 📊 TrendRadar v2.2.0 - 热点趋势雷达
+2026-05-26 01:19:09 - TrendRadar - INFO - ============================================================
+2026-05-26 01:19:09 - TrendRadar - INFO - 以单次脚本模式运行...
+2026-05-26 01:19:10 - TrendRadar - INFO - 获取 toutiao 成功（最新数据）
+2026-05-26 01:19:11 - TrendRadar - INFO - 获取 baidu 成功（最新数据）
+2026-05-26 01:19:12 - TrendRadar - INFO - 获取 wallstreetcn-hot 成功（最新数据）
+2026-05-26 01:19:14 - TrendRadar - INFO - 获取 thepaper 成功（最新数据）
+2026-05-26 01:19:15 - TrendRadar - INFO - 获取 bilibili-hot-search 成功（最新数据）
+2026-05-26 01:19:16 - TrendRadar - INFO - 获取 cls-hot 成功（最新数据）
+2026-05-26 01:19:17 - TrendRadar - INFO - 获取 ifeng 成功（最新数据）
+2026-05-26 01:19:19 - TrendRadar - INFO - 获取 jin10 成功（缓存数据）
+2026-05-26 01:19:20 - TrendRadar - INFO - 获取 wallstreetcn-quick 成功（最新数据）
+2026-05-26 01:19:21 - TrendRadar - INFO - 获取 tieba 成功（缓存数据）
+2026-05-26 01:19:22 - TrendRadar - INFO - 获取 weibo 成功（缓存数据）
+2026-05-26 01:19:23 - TrendRadar - INFO - 获取 douyin 成功（最新数据）
+2026-05-26 01:19:25 - TrendRadar - INFO - 获取 zhihu 成功（最新数据）
+2026-05-26 01:19:25 - TrendRadar - INFO - 爬取完成 - 成功: ['toutiao', 'baidu', 'wallstreetcn-hot', 'thepaper', 'bilibili-hot-search', 'cls-hot', 'ifeng', 'jin10', 'wallstreetcn-quick', 'tieba', 'weibo', 'douyin', 'zhihu'], 失败: []
+2026-05-26 01:19:25 - TrendRadar - INFO - 标题已保存到: output/2026年05月26日/txt/01时19分.txt
+2026-05-26 01:19:25 - TrendRadar - INFO - 关键词过滤: 354条 -> 7条匹配
+2026-05-26 01:19:26 - TrendRadar - INFO - 事件去重: 7条 -> 5个事件
+2026-05-26 01:19:26 - TrendRadar - INFO - ✓ 网络搜索引擎已初始化
+2026-05-26 01:19:35 - TrendRadar - INFO - 信息扩充完成: '摩根大通中国峰会：将大消费作为AI和机器人配置的资金来源' - 可信度: 0.75
+2026-05-26 01:19:41 - TrendRadar - INFO - 信息扩充完成: '宋承良评球少年强则国强，2034年国足重返世界杯？' - 可信度: 0.75
+2026-05-26 01:19:49 - TrendRadar - INFO - 信息扩充完成: '墨西哥总统：墨西哥将接待参加世界杯的伊朗队人员 墨西哥总统辛鲍姆：美国宣称不希望举办与伊朗有关的足球赛事之后，墨西哥政府同意让伊朗足球国家队在世界杯期间滞留墨西哥。 墨西哥总统确认伊朗队将世界杯驻地改至墨西哥' - 可信度: 0.75
+2026-05-26 01:19:56 - TrendRadar - INFO - 信息扩充完成: '郑钦文发布会哭了' - 可信度: 0.75
+2026-05-26 01:19:58 - TrendRadar - INFO - 企业微信消息大小: 3165 字节
+2026-05-26 01:19:59 - TrendRadar - INFO - 企业微信消息发送成功
+2026-05-26 01:19:59 - TrendRadar - INFO - 任务完成！
