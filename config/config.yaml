@@ -35,14 +35,8 @@ notification:
   batch_send_interval: 1 # 批次发送间隔（秒）
   feishu_message_separator: "━━━━━━━━━━━━━━━━━━━" # feishu 消息分割线
 
-  silent_push:
-    enabled: true  # 静默推送
-    # 每天早上9点定时推送
-    time_range:
-      start: "08:30"  # 推送时间范围开始（北京时间），留30分钟缓冲
-      end: "09:30"    # 推送时间范围结束（北京时间）
-    once_per_day: true  # 每天在时间范围内只推送一次，如果 false，则时间范围内每次执行都推送一次
-    push_record_retention_days: 7  # 推送记录保留天数
+  # 直接推送模式：由 GitHub Actions 定时任务控制推送时机
+  # 每天北京时间 00:10 自动运行并推送，无需时间检查
 
   # 请务必妥善保管好 webhooks，不要公开
   # 如果你以 fork 的方式将本项目部署在 GitHub 上，请勿在此填写任何 webhooks，而是将 webhooks 填入 GitHub Secret

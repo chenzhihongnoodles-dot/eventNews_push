@@ -103,6 +103,8 @@ class WeWorkNotifier(BaseNotifier):
             )
 
         content_lines = []
+        filtered_count = 0  # 被过滤掉的数量
+        
         for event in deduped_events:
             title = event.get("title", "")
             url = event.get("mobile_url") or event.get("url", "")
@@ -122,6 +124,13 @@ class WeWorkNotifier(BaseNotifier):
 
             # 大模型创意分析
             analysis = analyzer.analyze_activity_creativity(title, enriched_content)
+            
+            # 过滤：只保留与活动策划创意相关的内容
+            is_relevant = analysis.get('is_relevant', True)
+            if not is_relevant:
+                logger.info(f"过滤无关内容: {title[:30]}...")
+                filtered_count += 1
+                continue
 
             # 格式化输出
             lines = []
@@ -132,7 +141,7 @@ class WeWorkNotifier(BaseNotifier):
             lines.append("")
 
             event_summary = analysis.get('event_summary', '')
-            if event_summary:
+            if event_summary and event_summary != '不适用':
                 lines.append("· **活动简要：**" + event_summary)
             else:
                 lines.append("· **活动简要：**" + clean_title(title))
@@ -142,15 +151,19 @@ class WeWorkNotifier(BaseNotifier):
             innovation_highlights = analysis.get('innovation_highlights', '')
             if core_creative or innovation_highlights:
                 creative_text = ""
-                if core_creative:
+                if core_creative and core_creative != '不适用':
                     creative_text += core_creative
-                if innovation_highlights:
-                    creative_text += (" " if creative_text else "") + innovation_highlights
-                lines.append("· **创意与亮点：**" + creative_text)
-                lines.append("")
+                if innovation_highlights and innovation_highlights != '不适用':
+                    if creative_text:
+                        creative_text += (" " if creative_text else "") + innovation_highlights
+                    else:
+                        creative_text = innovation_highlights
+                if creative_text and creative_text != '不适用':
+                    lines.append("· **创意与亮点：**" + creative_text)
+                    lines.append("")
 
             reusable_elements = analysis.get('reusable_elements', '')
-            if reusable_elements:
+            if reusable_elements and reusable_elements != '不适用':
                 lines.append("· **可复用元素：**" + reusable_elements)
                 lines.append("")
 
@@ -158,10 +171,13 @@ class WeWorkNotifier(BaseNotifier):
             lines.append("")
 
             content_lines.append("\n".join(lines))
-
+        
         # 添加头部
         if content_lines:
-            content_lines.insert(0, f"📊 **今日活动创意灵感**（共 {len(content_lines)} 条）\n\n")
+            header = f"📊 **今日活动创意灵感**（共 {len(content_lines)} 条）"
+            if filtered_count > 0:
+                header += f"，已过滤 {filtered_count} 条无关内容"
+            content_lines.insert(0, header + "\n\n")
         else:
             content_lines = ["📭 今日暂无匹配的活动策划相关新闻"]
 

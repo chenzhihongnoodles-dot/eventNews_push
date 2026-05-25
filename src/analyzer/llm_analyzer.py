@@ -143,15 +143,18 @@ class LLMContentAnalyzer:
 
 请严格按照以下格式输出分析结果，每项内容单独一行：
 
+是否相关：（回答"是"或"否"，判断这条新闻是否与活动策划创意相关，如发布会、展览、音乐节、体育赛事、庆典活动、展览展示等线下活动策划；不包括单纯的股市行情、政治新闻、娱乐八卦、体育比赛结果等非活动策划内容）
 活动简要：（根据标题和内容，简要描述这个活动是什么、核心目的是什么，不要复述标题）
 核心创意点：（这个活动最亮眼的创意是什么？）
 可复用元素：（哪些策划手法可以复制到其他活动中？）
 创新亮点：（相比传统活动，哪里做得更出色？）
 
 注意：
-1. 活动简要需要提供有价值的信息，不能只是重复标题
-2. 使用中文回答，语言简洁专业
-3. 每项内容控制在50字以内
+1. 是否相关字段必须回答"是"或"否"
+2. 如果回答"否"，其他字段可以为空或填"不适用"
+3. 活动简要需要提供有价值的信息，不能只是重复标题
+4. 使用中文回答，语言简洁专业
+5. 每项内容控制在50字以内
 """
         return prompt.strip()
 
@@ -199,6 +202,7 @@ class LLMContentAnalyzer:
     def _parse_response(self, response: str) -> Dict:
         """解析大模型响应"""
         result = {
+            "is_relevant": False,           # 是否与活动策划创意相关
             "event_type": "未识别",
             "event_summary": "",           # 活动简要
             "core_creative": "",           # 核心创意点
@@ -219,7 +223,11 @@ class LLMContentAnalyzer:
         for line in lines:
             line = line.strip()
             
-            if "活动简要" in line:
+            if "是否相关" in line:
+                # 解析是否相关字段
+                value = line.replace("是否相关：", "").replace("是否相关:", "").strip()
+                result["is_relevant"] = value == "是"
+            elif "活动简要" in line:
                 result["event_summary"] = line.replace("活动简要：", "").replace("活动简要:", "").strip()
             elif "核心创意点" in line:
                 result["core_creative"] = line.replace("核心创意点：", "").replace("核心创意点:", "").strip()
@@ -249,6 +257,7 @@ class LLMContentAnalyzer:
     def _fallback_analysis(self, title: str, content: str) -> Dict:
         """降级分析（不使用大模型）"""
         return {
+            "is_relevant": True,           # 降级模式默认保留
             "event_type": "未识别",
             "event_summary": title,
             "core_creative": "",
