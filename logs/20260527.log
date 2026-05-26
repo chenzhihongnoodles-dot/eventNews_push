@@ -1,0 +1,27 @@
+2026-05-27 05:02:49 - TrendRadar - INFO - ============================================================
+2026-05-27 05:02:49 - TrendRadar - INFO - 📊 TrendRadar v2.2.0 - 热点趋势雷达
+2026-05-27 05:02:49 - TrendRadar - INFO - ============================================================
+2026-05-27 05:02:49 - TrendRadar - INFO - 以单次脚本模式运行...
+2026-05-27 05:02:51 - TrendRadar - INFO - 获取 toutiao 成功（最新数据）
+2026-05-27 05:02:52 - TrendRadar - INFO - 获取 baidu 成功（缓存数据）
+2026-05-27 05:02:53 - TrendRadar - INFO - 获取 wallstreetcn-hot 成功（最新数据）
+2026-05-27 05:02:55 - TrendRadar - INFO - 获取 thepaper 成功（最新数据）
+2026-05-27 05:02:56 - TrendRadar - INFO - 获取 bilibili-hot-search 成功（缓存数据）
+2026-05-27 05:02:57 - TrendRadar - INFO - 获取 cls-hot 成功（最新数据）
+2026-05-27 05:02:58 - TrendRadar - INFO - 获取 ifeng 成功（缓存数据）
+2026-05-27 05:03:00 - TrendRadar - INFO - 获取 jin10 成功（最新数据）
+2026-05-27 05:03:01 - TrendRadar - INFO - 获取 wallstreetcn-quick 成功（最新数据）
+2026-05-27 05:03:02 - TrendRadar - INFO - 获取 tieba 成功（缓存数据）
+2026-05-27 05:03:04 - TrendRadar - INFO - 获取 weibo 成功（缓存数据）
+2026-05-27 05:03:05 - TrendRadar - INFO - 获取 douyin 成功（最新数据）
+2026-05-27 05:03:06 - TrendRadar - INFO - 获取 zhihu 成功（最新数据）
+2026-05-27 05:03:06 - TrendRadar - INFO - 爬取完成 - 成功: ['toutiao', 'baidu', 'wallstreetcn-hot', 'thepaper', 'bilibili-hot-search', 'cls-hot', 'ifeng', 'jin10', 'wallstreetcn-quick', 'tieba', 'weibo', 'douyin', 'zhihu'], 失败: []
+2026-05-27 05:03:06 - TrendRadar - INFO - 标题已保存到: output/2026年05月27日/txt/05时03分.txt
+2026-05-27 05:03:06 - TrendRadar - INFO - 关键词过滤: 307条 -> 3条匹配
+2026-05-27 05:03:07 - TrendRadar - INFO - 事件去重: 3条 -> 3个事件
+2026-05-27 05:03:07 - TrendRadar - INFO - ✓ 网络搜索引擎已初始化
+2026-05-27 05:03:14 - TrendRadar - INFO - 信息扩充完成: '伊朗男足参加美墨世界杯：比赛日跨境入美，踢完就撤回墨西哥' - 可信度: 0.75
+2026-05-27 05:03:21 - TrendRadar - INFO - 信息扩充完成: '武汉汽水音乐节歌单' - 可信度: 0.75
+2026-05-27 05:03:23 - TrendRadar - INFO - 企业微信消息大小: 1853 字节
+2026-05-27 05:03:24 - TrendRadar - INFO - 企业微信消息发送成功
+2026-05-27 05:03:24 - TrendRadar - INFO - 任务完成！
