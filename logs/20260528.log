@@ -1,0 +1,31 @@
+2026-05-28 20:51:16 - TrendRadar - INFO - ============================================================
+2026-05-28 20:51:16 - TrendRadar - INFO - 📊 TrendRadar v2.2.0 - 热点趋势雷达
+2026-05-28 20:51:16 - TrendRadar - INFO - ============================================================
+2026-05-28 20:51:16 - TrendRadar - INFO - 以单次脚本模式运行...
+2026-05-28 20:51:17 - TrendRadar - INFO - 获取 toutiao 成功（最新数据）
+2026-05-28 20:51:19 - TrendRadar - INFO - 获取 baidu 成功（最新数据）
+2026-05-28 20:51:20 - TrendRadar - INFO - 获取 wallstreetcn-hot 成功（最新数据）
+2026-05-28 20:51:21 - TrendRadar - INFO - 获取 thepaper 成功（最新数据）
+2026-05-28 20:51:24 - TrendRadar - INFO - 获取 bilibili-hot-search 成功（缓存数据）
+2026-05-28 20:51:25 - TrendRadar - INFO - 获取 cls-hot 成功（最新数据）
+2026-05-28 20:51:27 - TrendRadar - INFO - 获取 ifeng 成功（最新数据）
+2026-05-28 20:51:28 - TrendRadar - INFO - 获取 jin10 成功（最新数据）
+2026-05-28 20:51:29 - TrendRadar - INFO - 获取 wallstreetcn-quick 成功（最新数据）
+2026-05-28 20:51:31 - TrendRadar - INFO - 获取 tieba 成功（缓存数据）
+2026-05-28 20:51:32 - TrendRadar - INFO - 获取 weibo 成功（最新数据）
+2026-05-28 20:51:33 - TrendRadar - INFO - 获取 douyin 成功（最新数据）
+2026-05-28 20:51:35 - TrendRadar - INFO - 获取 zhihu 成功（最新数据）
+2026-05-28 20:51:35 - TrendRadar - INFO - 爬取完成 - 成功: ['toutiao', 'baidu', 'wallstreetcn-hot', 'thepaper', 'bilibili-hot-search', 'cls-hot', 'ifeng', 'jin10', 'wallstreetcn-quick', 'tieba', 'weibo', 'douyin', 'zhihu'], 失败: []
+2026-05-28 20:51:35 - TrendRadar - INFO - 标题已保存到: output/2026年05月28日/txt/20时51分.txt
+2026-05-28 20:51:35 - TrendRadar - INFO - 关键词过滤: 305条 -> 4条匹配
+2026-05-28 20:51:35 - TrendRadar - ERROR - 事件去重失败: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2026-05-28 20:51:35 - TrendRadar - INFO - ✓ 网络搜索引擎已初始化
+2026-05-28 20:51:38 - TrendRadar - ERROR - 大模型分析失败: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2026-05-28 20:51:40 - TrendRadar - ERROR - 大模型分析失败: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2026-05-28 20:51:44 - TrendRadar - ERROR - 大模型分析失败: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2026-05-28 20:51:44 - TrendRadar - INFO - 信息扩充完成: '比亚迪 5 月 28 日举办的智能化战略发布会上发布了什么值得关注的新技术？有哪些亮点？' - 可信度: 0.75
+2026-05-28 20:51:45 - TrendRadar - ERROR - 大模型分析失败: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2026-05-28 20:51:47 - TrendRadar - ERROR - 大模型分析失败: 402 Client Error: Payment Required for url: https://api.deepseek.com/v1/chat/completions
+2026-05-28 20:51:47 - TrendRadar - INFO - 企业微信消息大小: 912 字节
+2026-05-28 20:51:49 - TrendRadar - INFO - 企业微信消息发送成功
+2026-05-28 20:51:49 - TrendRadar - INFO - 任务完成！
