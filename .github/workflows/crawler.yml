@@ -2,7 +2,7 @@ name: Hot News Crawler
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # 每天UTC时间0点运行，对应北京时间早上8点（UTC+8）
+    - cron: "*/10 * * * *"  # 每10分钟运行一次（UTC时间，GitHub只认这个）
   workflow_dispatch:        # 保留手动触发
 
 permissions:
